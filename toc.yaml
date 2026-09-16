@@ -1,0 +1,36 @@
+toc:
+  properties:
+    subcollection: paver
+    path: paver
+    href: /docs/paver
+    service-name: paver
+    audience: platform
+    category: platform_services
+    label: Paver on IBM Cloud
+  entries:
+  - navgroup:
+      id: learn
+      topics:
+      - topic: about.md
+        tag: draft
+      - topic: getting-started.md
+        tag: draft
+      - topic: plans.md
+        tag: draft
+  - navgroup:
+      id: howto
+      topics:
+      - topic: using-paver.md
+        tag: draft
+  - navgroup:
+      id: reference
+      topics:
+      - link:
+          label: CLI reference
+          href: https://qa.paver.ibm.com/docs/cli-reference
+          tag: draft
+  - navgroup:
+      id: help
+      topics:
+      - topic: get-help.md
+        tag: draft
