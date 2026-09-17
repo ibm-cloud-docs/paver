@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-16"
+lastupdated: "2026-09-17"
 
 keywords: paver getting started, install paver cli, authenticate paver cli, paver console
 
@@ -16,7 +16,7 @@ completion-time: 10m
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting started with Paver on {{site.data.keyword.cloud_notm}}
+# Getting started with IBM Paver
 {: #getting-started}
 {: toc-content-type="tutorial"}
 {: toc-completion-time="10m"}
@@ -24,7 +24,7 @@ completion-time: 10m
 Learn how to get started with Paver by using the {{site.data.keyword.cloud_notm}} console or by installing and authenticating with the Paver CLI.
 {: shortdesc}
 
-Paver on {{site.data.keyword.cloud_notm}} is available in the console where you can quickly start a chat with Paver, or you can download the CLI and interact directly with Paver in your terminal to complete tasks within the context of your {{site.data.keyword.cloud_notm}} account.
+IBM Paver is available in the console where you can quickly start a chat with Paver, or you can download the CLI and interact directly with Paver in your terminal to complete tasks within the context of your {{site.data.keyword.cloud_notm}} account.
 
 ## Using Paver in the {{site.data.keyword.cloud_notm}} console
 {: #paver-console}

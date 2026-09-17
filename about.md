@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-16"
+lastupdated: "2026-09-17"
 
 keywords: paver overview, what is paver, agentic ai, infrastructure operations, paver capabilities, paver security
 
@@ -12,7 +12,7 @@ subcollection: paver
 
 {{site.data.keyword.attribute-definition-list}}
 
-# About Paver on {{site.data.keyword.cloud_notm}}
+# About IBM Paver
 {: #paver-about}
 
 Learn about Paver, {{site.data.keyword.IBM_notm}}'s embedded agentic AI operator for {{site.data.keyword.cloud_notm}} infrastructure operations, its capabilities, and how it works with your account.
@@ -39,7 +39,7 @@ Paver can help you accomplish the following operational goals in your {{site.dat
 ## How Paver works with your account
 {: #paver-how-it-works}
 
-When you work with Paver on {{site.data.keyword.cloud_notm}}, several capabilities work together to make it effective across sessions, tasks, and your team's way of working.
+When you work with IBM Paver, several capabilities work together to make it effective across sessions, tasks, and your team's way of working.
 
 ### Your account context, always ready
 {: #paver-memory}

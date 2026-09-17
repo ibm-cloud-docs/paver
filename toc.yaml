@@ -6,7 +6,7 @@ toc:
     service-name: paver
     audience: platform
     category: platform_services
-    label: Paver on IBM Cloud
+    label: IBM Paver
   entries:
   - navgroup:
       id: learn

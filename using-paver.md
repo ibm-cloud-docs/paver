@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-16"
+lastupdated: "2026-09-17"
 
 keywords: using paver, paver cli, paver chat, paver ask, update paver cli
 
@@ -12,7 +12,7 @@ subcollection: paver
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Working with Paver on {{site.data.keyword.cloud_notm}}
+# Working with IBM Paver
 {: #paver-using}
 
 Learn how to work with Paver, start chat sessions in the CLI, ask questions, and keep your CLI updated.
