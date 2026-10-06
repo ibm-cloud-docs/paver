@@ -65,7 +65,7 @@ Disaster recovery includes tasks such as providing dependencies on disaster reco
 
 |  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |--|--|--|
-| Regional deployments | Provide Paver as a regional service. | [VERIFY: Whether customer responsibility for multi-region resiliency should be stated explicitly here. If confirmed, use:] Determine regional deployment requirements and evaluate whether multiple regional deployments are needed to meet resiliency objectives. Manage any business continuity or disaster recovery requirements that extend beyond a single-region deployment. |
+| Regional deployments | Provide Paver as a regional service. | No action required. |
 {: row-headers}
 {: caption="Responsibilities for disaster recovery" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}

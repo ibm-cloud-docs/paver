@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-10-06"
 
 keywords: using paver, paver cli, paver chat, paver ask, update paver cli
 
@@ -23,6 +23,7 @@ From discovering what Paver can do to working in the CLI, Paver is the best guid
 - **Ask Paver directly**: Run `paver ask "what can you help me with?"` or, inside a chat session, ask questions like "can you help me troubleshoot a Kubernetes cluster" to explore what Paver can do for your task.
 - **Ask before you act**: You can ask Paver to explain a service, a resource, or a proposed change before letting it make one. In safe mode (the default), high-risk write operations are blocked, so exploring is low-stakes.
 
+
 ## Starting a chat session in the CLI
 {: #paver-chat-session}
 
@@ -39,6 +40,9 @@ Or send a single question and get an answer:
 paver ask "what can you help me with?"
 ```
 {: pre}
+
+Don't enter personal information, API keys, or other secrets in your prompts to Paver.
+{: note}
 
 ## Updating the Paver CLI
 {: #paver-update-cli}

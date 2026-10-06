@@ -22,6 +22,8 @@ toc:
       topics:
       - topic: using-paver.md
         tag: draft
+      - topic: security.md
+        tag: draft
       - topic: managing-data.md
         tag: draft
   - navgroup:
