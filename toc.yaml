@@ -22,6 +22,8 @@ toc:
       topics:
       - topic: using-paver.md
         tag: draft
+      - topic: managing-data.md
+        tag: draft
   - navgroup:
       id: reference
       topics:
@@ -29,6 +31,12 @@ toc:
           label: CLI reference
           href: https://qa.paver.ibm.com/docs/cli-reference
           tag: draft
+      - link:
+          label: Chat commands
+          href: https://qa.paver.ibm.com/docs/tui-reference
+          tag: draft
+      - topic: responsibilities.md
+        tag: draft
   - navgroup:
       id: help
       topics:
