@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-06"
+lastupdated: "2026-10-08"
 
 keywords: manage paver data, paver data retention, export paver data, delete paver data, paver data residency, paver responsibilities
 
@@ -71,7 +71,7 @@ To delete your data, you can use the following commands:
 Delete all files in the sandbox workspace:
 
 ```sh
-paver files removeall
+paver files clear
 ```
 {: codeblock}
 
@@ -106,3 +106,6 @@ Alternatively, you can delete individual conversations by ID by using `paver con
 Paver is designed as a regional service. A user's conversation history, memories, skills, and files are stored in the {{site.data.keyword.cloud_notm}} region in which Paver is hosted for that user. If a region becomes unavailable, data stored in that region is not accessible from another region.
 
 AI inferencing is performed in the {{site.data.keyword.cloud_notm}} `us-east` region in the United States, regardless of the region in which Paver is hosted. To generate a response, Paver sends prompts and related content to an IBM AI model inferencing service in the `us-east` region. The inferencing service does not retain prompts or responses.
+
+In the future, AI inferencing will be available in the same regions as Paver, so that inferencing can co-reside with the region in which your data is stored.
+{: note}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-06"
+lastupdated: "2026-10-08"
 
 keywords: paver security, paver security guide, paverguard, safe mode, activity tracker, secrets management, data retention
 
@@ -21,12 +21,8 @@ IBM Paver is a cloud-hosted AI assistant service delivered through the IBM Cloud
 ## Installation and secure configuration
 {: #paver-security-installation-config}
 
-### Prerequisites
-{: #paver-security-prerequisites}
-
-
-
 Before provisioning Paver, ensure your IBM Cloud account has:
+
 - IBMid-based authentication configured for all users who will use Paver
 - IBM Cloud IAM policies reviewed and scoped to least privilege (Paver acts with the permissions of the authenticated user — no more)
 - MFA enforced at the IBM Cloud account level (see [Authentication and Authorization](#paver-security-auth))
@@ -250,4 +246,3 @@ For compliance use cases requiring longer retention, export conversations using 
 {: #paver-security-web-ui}
 
 The Paver web UI is delivered as a cloud-hosted application and is updated automatically by IBM. There is nothing for customers to install or maintain. Browser access follows the same IBMid authentication as the CLI.
-
