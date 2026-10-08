@@ -50,6 +50,7 @@ Enter a question or request in natural language. You can describe what you want 
 
 ## Tell Paver about yourself
 {: #personalize-workflow}
+{: step}
 
 Paver remembers things about you across conversations such as your preferred regions, how you like to work, the projects you're running, and other context that makes future interactions faster and more relevant. This is called memory in Paver. You can explicitly teach Paver about your preferences by telling Paver directly or trying out the `/personalize` slash command.
 
@@ -77,5 +78,5 @@ Now that you know how to find Paver and start a chat, you can explore all of the
 
 You can leverage the following resources to learn more about Paver:
 * For more information about Paver and its core concepts and tasks, see the [IBM Paver](https://paver.ibm.com/docs/welcome){: external} docs.
-* Decide whiich [plan](/docs/paver?topic=paver-paver-plans) works best for you.
+* Decide which [plan](/docs/paver?topic=paver-paver-plans) works best for you.
 * [Install Paver CLI](/docs/paver?topic=paver-paver-cli-install) to work with Paver in your terminal.
