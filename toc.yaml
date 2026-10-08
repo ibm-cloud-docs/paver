@@ -21,6 +21,7 @@ toc:
       - topic: cli-install.md
         tag: draft
       - topic: using-paver.md
+        navtitle: Starting an interactive chat
         tag: draft
       - link:
           label: Managing safeguards and controls

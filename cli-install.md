@@ -117,6 +117,19 @@ To use an API key and target your account, run the following commands:
    ```
    {: pre}
 
+## Updating the Paver CLI
+{: #paver-update-cli}
+
+The Paver CLI automatically checks for updates on a schedule. To update immediately to the latest version, run the following command:
+
+```sh
+paver update
+```
+{: pre}
+
+Keep your CLI updated to ensure compatibility with the server.
+{: important}
+
 ## Next steps
 {: #paver-cli-next-steps}
 
