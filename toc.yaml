@@ -20,6 +20,8 @@ toc:
   - navgroup:
       id: howto
       topics:
+      - topic: cli-install.md
+        tag: draft
       - topic: using-paver.md
         tag: draft
       - topic: managing-data.md

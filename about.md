@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-10-08"
 
 keywords: paver overview, what is paver, agentic ai, infrastructure operations, paver capabilities, paver security
 
@@ -64,9 +64,9 @@ When you need to go beyond chat to run a quick `ibmcloud` command, inspect a Kub
 ### Skills that know your services
 {: #paver-skills}
 
-IBM maintains a set of built-in skills for {{site.data.keyword.cloud_notm}} services, which works as domain-specific knowledge that Paver loads automatically based on what you ask, covering the right commands, correct sequences, and service-specific considerations for the task at hand. You can also upload your own user or enterprise skills to encode team-specific workflows, naming conventions, or runbooks. [VERIFY: Confirm whether user skills take priority over IBM-managed skills.]
+IBM maintains a set of built-in skills for {{site.data.keyword.cloud_notm}} services, which works as domain-specific knowledge that Paver loads automatically based on what you ask, covering the right commands, correct sequences, and service-specific considerations for the task at hand. You can also upload your own user skills to encode team-specific workflows, naming conventions, or runbooks.
 
 ### Operating with safeguards
 {: #paver-safety}
 
-When you're managing enterprise workloads on {{site.data.keyword.cloud_notm}}, staying in control of what Paver does and when is essential. By default, Paver operates in Safe mode where it can read your resources, diagnose problems, and explain what it would do, but it won't make changes. When you're ready to take action, switching to Edit mode means Paver asks for your explicit approval before each operation runs, and you can modify the exact command before it executes. PaverGuard adds a risk policy on top of this so you can set thresholds that auto-approve routine operations while holding higher-risk changes for your review, giving you fine-grained control that scales with how comfortable you are with the task at hand.
+When you're managing enterprise workloads on {{site.data.keyword.cloud_notm}}, staying in control of what Paver does and when is essential. By default, Paver operates in Safe mode where it can read your resources, diagnose problems, and explain what it would do, but it won't make changes. When you're ready to take action, switching to Edit mode means Paver asks for your explicit approval before each operation runs, and you can modify the exact command before it executes. Paver Guard adds a risk policy on top of this so you can set thresholds that auto-approve routine operations while holding higher-risk changes for your review, giving you fine-grained control that scales with how comfortable you are with the task at hand.

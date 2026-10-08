@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2026
-lastupdated: "2026-09-17"
+  years: 2026, 2026
+lastupdated: "2026-10-08"
 
-keywords: paver getting started, install paver cli, authenticate paver cli, paver console
+keywords: paver getting started, paver console, chat with paver
 
 subcollection: paver
 
@@ -21,118 +21,61 @@ completion-time: 10m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="10m"}
 
-Learn how to get started with Paver by using the {{site.data.keyword.cloud_notm}} console or by installing and authenticating with the Paver CLI.
+Learn how to get started with Paver by using the {{site.data.keyword.cloud_notm}} console.
 {: shortdesc}
 
-IBM Paver is available in the console where you can quickly start a chat with Paver, or you can download the CLI and interact directly with Paver in your terminal to complete tasks within the context of your {{site.data.keyword.cloud_notm}} account.
+IBM Paver is available in the {{site.data.keyword.cloud_notm}} console, where you can quickly start a chat with Paver to manage your account and resources and operate your infrastructure. To interact with Paver from your terminal instead, see [Installing the Paver CLI](/docs/paver?topic=paver-paver-cli-install).
 
-## Using Paver in the {{site.data.keyword.cloud_notm}} console
+## Open Paver in the console
 {: #paver-console}
 {: step}
 
 You can chat with Paver directly in the {{site.data.keyword.cloud_notm}} console.
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
-1. From the {{site.data.keyword.cloud_notm}} console menu bar, click **Chat with Paver**.
-1. Enter your prompt, and start working with Paver to manage your {{site.data.keyword.cloud_notm}} account and resources.
+1. From the {{site.data.keyword.cloud_notm}} console menu bar, click ![Chat with Paver icon](../icons/chat-button.svg "Chat with Paver") **Chat with Paver**.
 
-## Installing the Paver CLI
-{: #paver-install-cli}
+
+## Start your first chat
+{: #paver-interactive}
 {: step}
 
-You can install the Paver CLI on macOS, Linux, or Windows.
+Start a new interactive chat and see how Paver can help.
 
-### macOS and Linux
-{: #paver-install-mac-linux}
+1. Click **New task**.
+1. Choose a starter prompt, or type your own question. You can ask Paver to tell you about it's capabilities and features to learn about how Paver can assist. It has knowledge of your environment
 
-Run the following command to install the Paver CLI:
+Enter a question or request in natural language. You can describe what you want to do and Paver will help you take action.
+{: tip}
 
-```sh
-curl -fsSL https://paver.cloud.ibm.com/cli/install | bash
-```
-{: pre}
+## Tell Paver about yourself
+{: #personalize-workflow}
 
-The CLI is installed and ready to use immediately after installation completes.
+Paver remembers things about you across conversations such as your preferred regions, how you like to work, the projects you're running, and other context that makes future interactions faster and more relevant. This is called memory in Paver. You can explicitly teach Paver about your preferences by telling Paver directly or trying out the `/personalize` slash command.
 
-### Windows
-{: #paver-install-windows}
+1. In your chat, enter `/personalize`. This starts an interactive interview to help Paver learn more about your preferences.
+1. Respond to Paver as it asks you questions to build new memories.
 
-The Paver CLI requires a Unix shell. On Windows, install it through the Windows Subsystem for Linux (WSL).
 
-#### Install Linux on WSL
-{: #paver-windows-linx}
-
-1. Open PowerShell with **Run as Administrator**.
-1. Run the following command to install Ubuntu by default:
-
-   ```sh
-   wsl --install
-   ```
-   {: pre}
-
-1. Complete the Unix account creation prompts when WSL restarts.
-
-#### Install Node.js on WSL
-{: #node-on-wsl}
-
-1. Run the following command inside WSL:
-
-   ```sh
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-   ```
-   {: pre}
-
-1. Restart the WSL terminal.
-1. Install Node.js:
-
-   ```sh
-   nvm install node
-   ```
-   {: pre}
-
-#### Install the Paver CLI on Windows
-{: #windows-paver}
-
-In PowerShell (not WSL), run:
-
-```sh
-iwr https://paver.cloud.ibm.com/cli/install.ps1 | iex
-```
-{: pre}
-
-## Authenticating with the Paver CLI
-{: #paver-authentication}
+## Explore the settings
+{: #paver-settings}
 {: step}
 
-You can authenticate with single sign-on (SSO) or an API key.
+Set your theme, language preference, and Paver Guard approval policies to control how often you're asked to approve specific actions.
 
-### Log in with SSO
-{: #paver-sso-login}
+1. Click ![Settings](../icons/settings.svg "Settings icon") **Settings**.
+1. Set your theme to match how you like to work.
+1. Set your preferred language
+1. Review the options for auto-approve and auto-deny options. For more information, see [Managing safeguards and controls](https://paver.ibm.com/docs/core-concepts/managing-risk-and-control).
+1. Select **All settings** explore options for managing memories and storing secrets in the keyring.
 
-To use SSO, run the following command:
+## Next steps
+{: #next-steps}
+{: step}
 
-```sh
-paver login
-```
-{: pre}
+Now that you know how to find Paver and start a chat, you can explore all of the possibilities by chatting directly with Paver. Paver is your best guide to understand all of its capabilities and making a plan to streamline your infrastructure operations.
 
-A web browser opens and prompts you to select the account that you want to target.
-
-### Log in with an API key
-{: #paver-api-key-login}
-
-To use an API key and target your account, run the following commands:
-
-1. Log in with your API key:
-
-   ```sh
-   paver login --apikey $CLOUD_API_KEY
-   ```
-   {: pre}
-
-1. Select your target account:
-
-   ```sh
-   paver account target
-   ```
-   {: pre}
+You can leverage the following resources to learn more about Paver:
+* For more information about Paver and its core concepts and tasks, see the [IBM Paver](https://paver.ibm.com/docs/welcome){: external} docs.
+* Decide whiich [plan](/docs/paver?topic=paver-paver-plans) works best for you.
+* [Install Paver CLI](/docs/paver?topic=paver-paver-cli-install) to work with Paver in your terminal.

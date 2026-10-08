@@ -2,47 +2,43 @@
   "version": 2,
   "title": "IBM Paver",
   "introduction": "Learn about Paver, IBM Cloud's agentic AI operator for IBM Cloud infrastructure and account operations, its capabilities, and how it works with your account.",
-  "product_page": "https://www.ibm.com/paver",
   "section_topics": {
     "links": [
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Learn about Paver used on IBM Cloud",
+        "href": "/docs/paver?topic=paver-paver-about"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Getting started with IBM Paver on IBM Cloud",
+        "href": "/docs/paver?topic=paver-getting-started"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Paver plans",
+        "href": "/docs/paver?topic=paver-paver-plans"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Working with Paver",
+        "href": "/docs/paver?topic=paver-paver-using"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Known issues and limiations",
+        "href": "/docs/paver?topic=paver-paver-known-issues"
       }
     ]
   },
   "section_highlights": [
     {
-      "title": "Resource title",
+      "title": "IBM Paver",
       "description": "Short description of resource content.",
-      "href": "https://www.example.ibm.com/link/to/resource",
-      "type": "blog"
+      "href": "https://paver.ibm.com/",
+      "type": "article"
     },
     {
-      "title": "Db2 Optimization Techniques for SAP Database Migration to the Cloud",
+      "title": "Chat commands reference",
       "description": "This IBM Redbook provides in-depth recommendations for the source system database export.",
-      "href": "https://www.redbooks.ibm.com/abstracts/sg248531.html",
-      "type": "redbook",
+      "href": "https://paver.ibm.com/docs/tui-reference",
+      "type": "article",
       "recommended": true
     }
-  ],
-  "section_devtools": {
-    "cli": "/docs/cli-reference"
-  }
+  ]
 }
