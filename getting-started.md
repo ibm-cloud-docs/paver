@@ -16,12 +16,12 @@ completion-time: 10m
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting started with IBM Paver
+# Getting started with IBM Paver in {{site.data.keyword.cloud_notm}}
 {: #getting-started}
 {: toc-content-type="tutorial"}
 {: toc-completion-time="10m"}
 
-Learn how to get started with Paver by using the {{site.data.keyword.cloud_notm}} console.
+Learn how to get started with Paver by using the {{site.data.keyword.cloud}} console.
 {: shortdesc}
 
 IBM Paver is available in the {{site.data.keyword.cloud_notm}} console, where you can quickly start a chat with Paver to manage your account and resources and operate your infrastructure. To interact with Paver from your terminal instead, see [Installing the Paver CLI](/docs/paver?topic=paver-paver-cli-install).

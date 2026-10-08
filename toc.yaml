@@ -4,8 +4,8 @@ toc:
     path: paver
     href: /docs/paver
     service-name: paver
-    audience: platform
-    category: platform_services
+    audience: service
+    category: ai
     label: IBM Paver
   entries:
   - navgroup:
@@ -14,6 +14,7 @@ toc:
       - topic: about.md
         tag: draft
       - topic: getting-started.md
+        navtitle: Getting started
         tag: draft
   - navgroup:
       id: howto
