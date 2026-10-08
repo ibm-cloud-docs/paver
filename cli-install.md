@@ -33,7 +33,7 @@ curl -fsSL https://paver.cloud.ibm.com/cli/install | bash
 ```
 {: pre}
 
-The CLI is installed and ready to use immediately after installation completes.
+After the installation completes, you must [authenticate with your {{site.data.keyword.cloud_notm}} account](/docs/paver?topic=paver-paver-cli-install#paver-authentication) and target a specific account to get started.
 
 ### Windows
 {: #paver-install-windows}
@@ -96,7 +96,7 @@ paver login
 ```
 {: pre}
 
-A web browser opens and prompts you to select the account that you want to target.
+A browser opens and prompts you to select the account that you want to target.
 
 ### Log in with an API key
 {: #paver-api-key-login}
@@ -116,3 +116,15 @@ To use an API key and target your account, run the following commands:
    paver account target
    ```
    {: pre}
+
+## Next steps
+{: #paver-cli-next-steps}
+
+After you authenticate, start an interactive chat session with Paver:
+
+```sh
+paver-chat
+```
+{: pre}
+
+In the chat, you can ask Paver about itself, explore available commands, or start working with your {{site.data.keyword.cloud_notm}} account and resources.
