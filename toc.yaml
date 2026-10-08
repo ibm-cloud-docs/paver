@@ -15,8 +15,6 @@ toc:
         tag: draft
       - topic: getting-started.md
         tag: draft
-      - topic: plans.md
-        tag: draft
   - navgroup:
       id: howto
       topics:
@@ -24,35 +22,30 @@ toc:
         tag: draft
       - topic: using-paver.md
         tag: draft
-      - topicgroup:
-          id: core-concepts
-          label: Core concepts and tasks
+      - link:
+          label: Managing safeguards and controls
+          href: https://qa.paver.ibm.com/docs/core-concepts/managing-risk-and-control
           tag: draft
-          links:
-          - link:
-              label: Managing safeguards and controls
-              href: https://qa.paver.ibm.com/docs/core-concepts/managing-risk-and-control
-              tag: draft
-          - link:
-              label: Storing your secrets
-              href: https://qa.paver.ibm.com/docs/core-concepts/keyring
-              tag: draft
-          - link:
-              label: Building persistent context
-              href: https://qa.paver.ibm.com/docs/core-concepts/memory
-              tag: draft
-          - link:
-              label: Sharing files
-              href: https://qa.paver.ibm.com/docs/core-concepts/files
-              tag: draft
-          - link:
-              label: Using the interactive shell
-              href: https://qa.paver.ibm.com/docs/core-concepts/shell
-              tag: draft
-          - link:
-              label: Extending Paver with skills
-              href: https://qa.paver.ibm.com/docs/core-concepts/skills
-              tag: draft
+      - link:
+          label: Storing your secrets
+          href: https://qa.paver.ibm.com/docs/core-concepts/keyring
+          tag: draft
+      - link:
+          label: Building persistent context
+          href: https://qa.paver.ibm.com/docs/core-concepts/memory
+          tag: draft
+      - link:
+          label: Sharing files
+          href: https://qa.paver.ibm.com/docs/core-concepts/files
+          tag: draft
+      - link:
+          label: Using the interactive shell
+          href: https://qa.paver.ibm.com/docs/core-concepts/shell
+          tag: draft
+      - link:
+          label: Extending Paver with skills
+          href: https://qa.paver.ibm.com/docs/core-concepts/skills
+          tag: draft
       - topic: managing-data.md
         tag: draft
   - navgroup:

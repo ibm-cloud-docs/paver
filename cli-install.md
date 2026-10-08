@@ -12,7 +12,7 @@ subcollection: paver
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Installing the Paver CLI
+# Installing Paver CLI
 {: #paver-cli-install}
 
 Install the Paver CLI on your local machine and authenticate with your {{site.data.keyword.cloud_notm}} account to start working with Paver directly from the terminal.
@@ -21,7 +21,7 @@ Install the Paver CLI on your local machine and authenticate with your {{site.da
 ## Installing the CLI
 {: #paver-install-cli}
 
-You can install the Paver CLI on macOS, Linux, or Windows.
+You can install Paver CLI on macOS, Linux, or Windows.
 
 ### macOS and Linux
 {: #paver-install-mac-linux}
@@ -81,7 +81,7 @@ iwr https://paver.cloud.ibm.com/cli/install.ps1 | iex
 ```
 {: pre}
 
-## Authenticating with the Paver CLI
+## Authenticating with Paver CLI
 {: #paver-authentication}
 
 You can authenticate with single sign-on (SSO) or an API key.
@@ -123,7 +123,7 @@ To use an API key and target your account, run the following commands:
 After you authenticate, start an interactive chat session with Paver:
 
 ```sh
-paver-chat
+paver chat
 ```
 {: pre}
 

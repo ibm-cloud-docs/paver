@@ -15,7 +15,7 @@ subcollection: paver
 # Getting help and support with Paver
 {: #help-and-support}
 
-If you experience an issue or have questions, you can ask Paver directly, open a support case, or submit feedback to help improve the product.
+If you experience an issue or have questions when using Paver, start by asking Paver directly in a chat session. Paver can help diagnose and resolve many issues without needing to open a support case. If you still can't resolve the problem, you can open a support case with IBM Cloud Support.
 {: shortdesc}
 
 ## Ask Paver for help
@@ -46,6 +46,42 @@ The fastest way to get help is to ask Paver directly. Paver can help you underst
    paver help [command]
    ```
    {: pre}
+
+
+## Opening a support case
+{: #paver-support-case}
+
+If you can't resolve an issue by asking Paver or reviewing the documentation, you can open a support case with IBM Cloud Support.
+
+Before you open a case, try the following:
+
+* Check the status of {{site.data.keyword.cloud_notm}} platform and resources on the [Status page](https://cloud.ibm.com/status){: external} to rule out a platform-level incident.
+* Review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see whether other users ran into the same problem. When you post a question, tag it with `ibm-cloud` and `paver` so that it's visible to the {{site.data.keyword.cloud_notm}} development teams.
+
+When you're ready to open a case, go to [Creating support cases](/docs/get-support?topic=get-support-open-case) for instructions. Based on your [support plan](/docs/get-support?topic=get-support-support-plans), you may have access to additional support options including priority handling and direct access to a support engineer.
+
+### Providing support case details
+{: #paver-support-case-details}
+
+To help the support team investigate your issue quickly, include the following information in your support case:
+
+1. Describe the issue and include the exact steps to reproduce it, if applicable.
+2. Include the Paver session ID. From a chat session, run the following command to retrieve it:
+
+   ```sh
+   /info
+   ```
+   {: pre}
+
+3. Include the relevant output from the Paver session, such as error messages, unexpected responses, or command output.
+4. If the issue involves the Paver CLI, include the CLI version by running the following command:
+
+   ```sh
+   paver --version
+   ```
+   {: pre}
+
+5. If the issue involves a specific {{site.data.keyword.cloud_notm}} resource, include the resource ID and region.
 
 ## Submitting feedback in Paver
 {: #paver-feedback}
