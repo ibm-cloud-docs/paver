@@ -39,6 +39,8 @@ toc:
         tag: draft
       - topic: responsibilities.md
         tag: draft
+      - topic: known-issues.md
+        tag: draft
   - navgroup:
       id: help
       topics:
