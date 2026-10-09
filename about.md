@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-08"
+lastupdated: "2026-10-09"
 
 keywords: paver overview, what is paver, agentic ai, infrastructure operations, paver capabilities, paver security
 
@@ -26,6 +26,20 @@ Paver is built for environments where reliability, governance, and accountabilit
 
 Your prompts, context, and operational data are never used to train foundation models.
 {: note}
+
+## What you can do with Paver
+{: #paver-capabilities}
+
+Paver can help you accomplish the following operational goals in your {{site.data.keyword.cloud_notm}} account:
+
+- Deploy applications across {{site.data.keyword.cloud_notm}} infrastructure
+- Resolve incidents by correlating logs, metrics, and recent changes
+- Optimize infrastructure utilization and reduce operational overhead
+- Identify security exposures, policy gaps, and compliance risks
+- Surface cost optimization opportunities and unused resources
+- Understand infrastructure resources, configurations, and dependencies
+
+These are just a few example use cases where Paver can help. Try chatting with Paver about your goals or pain points to identify additional use cases that are relevant to your environment and workflow.
 
 ## How Paver works with your account
 {: #paver-how-it-works}
@@ -61,41 +75,3 @@ IBM maintains a set of built-in skills for {{site.data.keyword.cloud_notm}} serv
 {: #paver-safety}
 
 When you're managing enterprise workloads on {{site.data.keyword.cloud_notm}}, staying in control of what Paver does and when is essential. By default, Paver operates in Safe mode where it can read your resources, diagnose problems, and explain what it would do, but it won't make changes. When you're ready to take action, switching to Edit mode means Paver asks for your explicit approval before each operation runs, and you can modify the exact command before it executes. Paver Guard adds a risk policy on top of this so you can set thresholds that auto-approve routine operations while holding higher-risk changes for your review, giving you fine-grained control that scales with how comfortable you are with the task at hand. For more information, see [Managing safeguards and controls](https://paver.ibm.com/docs/core-concepts/managing-risk-and-control){: external}.
-
-## What you can do with Paver
-{: #paver-capabilities}
-
-Paver can help you accomplish the following operational goals in your {{site.data.keyword.cloud_notm}} account:
-
-- Deploy applications across {{site.data.keyword.cloud_notm}} infrastructure
-- Resolve incidents by correlating logs, metrics, and recent changes
-- Optimize infrastructure utilization and reduce operational overhead
-- Identify security exposures, policy gaps, and compliance risks
-- Surface cost optimization opportunities and unused resources
-- Understand infrastructure resources, configurations, and dependencies
-
-These are just a few example use cases where Paver can help. Try chatting with Paver about your goals or pain points to identify additional use cases that are relevant to your environment and workflow.
-
-## Paver plans
-{: #paver-plan-details}
-
-Paver has a Free and Professional plan. Each plan includes a monthly credit allocation for running Paver operations. Credits are consumed as you use Paver, and when credits are exhausted, the behavior depends on your plan. Credits reset on the first of every month. For full details on cost and included features per plan, go to [TBD](TBD). 
-
-Free
-:   The Free plan is designed for individual exploration and learning. You receive 1,000 credits per month at no cost. When credits are exhausted, Paver enters read-only mode, meaning it can continue to provide information and guidance but can't' take actions on your behalf until credits renew. Supported features may vary.
-
-Professional
-:   The Professional plan is designed for individual practitioners and teams who run regular operations. When credits are exhausted, additional usage is billed on a pay-as-you-go basis per credit.
-
-You can upgrade from the Free plan to the Professional plan at any time. If you are reaching your limit on the Free plan, you are prompted in the console with alerts that you're reaching your limit and you can choose to upgrade at that time too.
-
-1. Go to ![Help icon](../icons/help.svg "Help") **Help** menu and select **Ask Paver**.
-1. **TBD on whether they can go through catalog**
-
-## Next steps
-{: #paver-plans-next-steps}
-
-You can get started with Paver for free today. Check out the following resources:
-
-- [Getting started with Paver](/docs/paver?topic=paver-getting-started)
-- [Learn more about Paver](/docs/paver?topic=paver-paver-about)

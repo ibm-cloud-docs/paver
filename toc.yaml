@@ -16,6 +16,8 @@ toc:
       - topic: getting-started.md
         navtitle: Getting started
         tag: draft
+      - topic: plans.md
+        tag: draft
   - navgroup:
       id: howto
       topics:

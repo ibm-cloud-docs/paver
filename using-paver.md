@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-08"
+lastupdated: "2026-10-09"
 
 keywords: using paver, paver cli, paver chat, paver ask, update paver cli
 
@@ -15,10 +15,8 @@ subcollection: paver
 # Starting an interactive chat with IBM Paver in {{site.data.keyword.cloud_notm}}
 {: #paver-using}
 
-Learn how to work with Paver, start chat sessions console and CLI, ask questions, and keep your CLI updated.
+Learn how to work with Paver, start chat sessions console and CLI, ask questions, and keep your CLI updated. From discovering what Paver can do to working in the CLI, Paver is the best guide to help you be successful.
 {: shortdesc}
-
-From discovering what Paver can do to working in the CLI, Paver is the best guide to help you be successful.
 
 Ask Paver directly
 :   Run `paver ask "what can you help me with?"` or, inside a chat session ask questions like "can you help me identify resources that are rarely used" to explore what Paver can do for your task.
