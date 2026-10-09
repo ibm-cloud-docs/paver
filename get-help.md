@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-08"
+lastupdated: "2026-10-09"
 
 keywords: paver help, paver support, paver feedback, troubleshoot paver
 
@@ -15,7 +15,7 @@ subcollection: paver
 # Getting help and support with Paver
 {: #help-and-support}
 
-If you experience an issue or have questions when using Paver, start by asking Paver directly in a chat session. Paver can help diagnose and resolve many issues without needing to open a support case. If you still can't resolve the problem, you can open a support case with IBM Cloud Support.
+If you experience an issue or have questions when using Paver, start by asking Paver directly in a chat session. Paver can help diagnose and resolve many common issues. If you still can't resolve the problem, you can open a support case with IBM Cloud Support. You can also submit feedback directly from a chat session to help improve the Paver experience.
 {: shortdesc}
 
 ## Ask Paver for help
