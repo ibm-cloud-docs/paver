@@ -11,10 +11,10 @@ toc:
   - navgroup:
       id: learn
       topics:
-      - topic: about.md
-        tag: draft
       - topic: getting-started.md
         navtitle: Getting started
+        tag: draft
+      - topic: about.md
         tag: draft
       - topic: plans.md
         tag: draft
@@ -72,5 +72,7 @@ toc:
   - navgroup:
       id: help
       topics:
+      - topic: troubleshoot.md
+        tag: draft
       - topic: get-help.md
         tag: draft

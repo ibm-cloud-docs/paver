@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-08"
+lastupdated: "2026-10-09"
 
 keywords: install paver cli, authenticate paver cli, paver cli macos, paver cli linux, paver cli windows, paver sso login, paver api key login
 
@@ -120,15 +120,14 @@ To use an API key and target your account, run the following commands:
 ## Updating the Paver CLI
 {: #paver-update-cli}
 
-The Paver CLI automatically checks for updates on a schedule. To update immediately to the latest version, run the following command:
+Update the CLI to the latest version:
 
 ```sh
 paver update
 ```
 {: pre}
 
-Keep your CLI updated to ensure compatibility with the server.
-{: important}
+
 
 ## Next steps
 {: #paver-cli-next-steps}

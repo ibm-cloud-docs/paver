@@ -30,8 +30,6 @@ You can upgrade from the Free plan to the Professional plan at any time. If you 
 1. Go to **Billing and usage**.
 1. Click **Upgrade** to review the plan options and upgrade.
 
-## Next steps
-{: #paver-plans-next-steps}
 
 Now that you understand the plans for IBM Paver and how you can get started for free today, check out the following resources:
 
