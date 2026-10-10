@@ -2,9 +2,9 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-06"
+lastupdated: "2026-10-10"
 
-keywords: paver responsibilities, IBM responsibilities, customer responsibilities, shared responsibilities, paver data management
+keywords: paver responsibilities, customer responsibilities with paver
 
 subcollection: paver
 
@@ -41,9 +41,24 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 
 |  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |--|--|--|
+| Instance provisioning and data residency | Make Paver available in supported {{site.data.keyword.cloud_notm}} regions and store user data in the region where the instance is created. | Provision Paver instances in the region where you require data to be stored to meet your [data residency](/docs/paver?topic=paver-paver-managing-data#paver-data-residency) requirements. |
 | Data retention lifecycle | Maintain the retention lifecycle for Paver-managed data. Inactive user data is automatically deleted after approximately 90 days. | Export any data you want to preserve outside of Paver before the retention period expires. |
 {: row-headers}
 {: caption="Responsibilities for change management" caption-side="bottom"}
+{: summary="The rows are read from left to right. The first column describes the task. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
+
+## Identity and access management
+{: #paver-iam-responsibilities}
+
+Identity and access management includes tasks such as authentication, authorization, access control policies, and approving, granting, and revoking access.
+
+|  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
+|--|--|--|
+| Access policies and permissions | Enforce {{site.data.keyword.cloud_notm}} IAM policies. Ensure that Paver operates only with the permissions of the authenticated user. | Follow IAM least privilege principles when assigning access policies. Ensure that users have only the permissions required for their tasks. |
+| User actions and data access | Restrict operations to the permissions of the authenticated user. | Take responsibility for all actions taken, data accessed, and changes made through Paver under your credentials. |
+| Risk evaluation and safeguards | Provide risk warnings for proposed actions and provide safe mode to block modifying operations. | Review Paver's warnings about risky actions, make appropriate judgments before approving changes, and use [safe mode](/docs/paver?topic=paver-paver-security-guide#paver-security-safe-edit-mode) when working with sensitive resources or accounts. |
+{: row-headers}
+{: caption="Responsibilities for identity and access management" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 ## Security and regulation compliance
@@ -53,6 +68,7 @@ Security and regulation compliance includes tasks such as security controls impl
 
 |  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |--|--|--|
+| Sensitive data handling | Encrypt stored data at rest and in transit. Paver does not request personally identifiable information (PII) or sensitive personal information (SPI). | Take responsibility for any PII or SPI that you submit through Paver. Understand that any sensitive data that you provide or use Paver to handle is stored in conversation history and files, and you must manage or [delete your data](/docs/paver?topic=paver-paver-managing-data#paver-deleting-data) to comply with your organization's regulatory standards. |
 | Data export and deletion | Provide capabilities to export and delete user data. | Export or delete your stored Paver data as needed to meet your compliance requirements. |
 {: row-headers}
 {: caption="Responsibilities for security and regulation compliance" caption-side="bottom"}
