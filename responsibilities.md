@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-10"
+lastupdated: "2026-10-12"
 
 keywords: paver responsibilities, customer responsibilities with paver
 
@@ -42,7 +42,7 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 |  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |--|--|--|
 | Instance provisioning and data residency | Make Paver available in supported {{site.data.keyword.cloud_notm}} regions and store user data in the region where the instance is created. | Provision Paver instances in the region where you require data to be stored to meet your [data residency](/docs/paver?topic=paver-paver-managing-data#paver-data-residency) requirements. |
-| Data retention lifecycle | Maintain the retention lifecycle for Paver-managed data. Inactive user data is automatically deleted after approximately 90 days. | Export any data you want to preserve outside of Paver before the retention period expires. |
+| Data retention lifecycle | Maintain the retention lifecycle for Paver-managed data. Inactive user data is automatically deleted after approximately 90 days. | Export any data that you want to preserve outside of Paver before the retention period expires. |
 {: row-headers}
 {: caption="Responsibilities for change management" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
@@ -55,7 +55,7 @@ Identity and access management includes tasks such as authentication, authorizat
 |  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |--|--|--|
 | Access policies and permissions | Enforce {{site.data.keyword.cloud_notm}} IAM policies. Ensure that Paver operates only with the permissions of the authenticated user. | Follow IAM least privilege principles when assigning access policies. Ensure that users have only the permissions required for their tasks. |
-| User actions and data access | Restrict operations to the permissions of the authenticated user. | Take responsibility for all actions taken, data accessed, and changes made through Paver under your credentials. |
+| User actions and data access | Restrict operations to the permissions of the authenticated user. | Take responsibility for all actions taken, data that is accessed, and changes made through Paver under your credentials. |
 | Risk evaluation and safeguards | Provide risk warnings for proposed actions and provide safe mode to block modifying operations. | Review Paver's warnings about risky actions, make appropriate judgments before approving changes, and use [safe mode](/docs/paver?topic=paver-paver-security-guide#paver-security-safe-edit-mode) when working with sensitive resources or accounts. |
 {: row-headers}
 {: caption="Responsibilities for identity and access management" caption-side="bottom"}
@@ -77,7 +77,7 @@ Security and regulation compliance includes tasks such as security controls impl
 ## Disaster recovery
 {: #paver-disaster-recovery}
 
-Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provision disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
+Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provision disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and fail over on disaster events.
 
 |  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |--|--|--|

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-12"
 
 keywords: paver security, paver security guide, paverguard, safe mode, {{site.data.keyword.at_short}}, secrets management, data retention
 
@@ -15,17 +15,17 @@ subcollection: paver
 # IBM Paver Security Guide
 {: #paver-security-guide}
 
-IBM Paver is a cloud-hosted AI assistant service delivered through the IBM Cloud catalog. Because Paver is a managed service, IBM is responsible for the underlying infrastructure security — including network hardening, OS hardening, patch management, physical security, and service-level encryption. This document focuses on what customers need to know to configure and use Paver securely within their own environments.
+IBM Paver is a cloud-hosted AI assistant service that is delivered through the IBM Cloud catalog. Because Paver is a managed service, IBM is responsible for the underlying infrastructure security, including network hardening, OS hardening, patch management, physical security, and service-level encryption. This document focuses on what customers need to know to configure and use Paver securely within their own environments.
 {: shortdesc}
 
 ## Installation and secure configuration
 {: #paver-security-installation-config}
 
-Before provisioning Paver, ensure your IBM Cloud account has the following:
+Before provisioning Paver, ensure that your IBM Cloud account has the following:
 
-- IBMid-based authentication configured for all users who will use Paver
-- IBM Cloud IAM policies reviewed and scoped to least privilege (Paver acts with the permissions of the authenticated user — no more)
-- MFA enforced at the IBM Cloud account level (see [Authentication and Authorization](#paver-security-auth))
+- IBMid-based authentication is configured for all users who will use Paver
+- IBM Cloud IAM policies reviewed and scoped to least privilege. Paver acts with the permissions of the authenticated user.
+- Multifactor authentication (MFA) enforced at the IBM Cloud account level (see [Authentication and Authorization](#paver-security-auth))
 
 ### Provisioning Paver
 {: #paver-security-provisioning}
@@ -36,14 +36,14 @@ Paver is not installed software. It is provisioned as a service instance through
 
 - Provision Paver instances only in regions that satisfy your data residency requirements. Paver is currently available in `us-south`, `eu-de`, and `jp-tok`. All user data is stored in the region where the instance was provisioned. 
 - Apply IBM Cloud IAM access controls to restrict who can provision, manage, or delete Paver service instances. 
-- Use IBM Cloud resource groups and access policies to segregate resources by team or environment, for example dev vs. production. Because Paver operates with the permissions of the authenticated user, environment segregation is achieved through standard IAM role scoping — users who cannot perform an action directly cannot perform it through Paver either.
+- Use IBM Cloud resource groups and access policies to separate resources by team or environment, for example dev versus production. Because Paver operates with the permissions of the authenticated user, environment separation is achieved through standard IAM role scoping, so users who cannot perform an action directly cannot perform it through Paver either.
 
 ### Execution sandbox
 {: #paver-security-execution-sandbox}
 
-Paver executes commands and scripts in an IBM Cloud-hosted sandbox on a VM dedicated to you. Other users do not share this VM or its local sandbox storage. Within your VM, each conversation runs in a separate container with its own processes and temporary workspace.
+Paver runs commands and scripts in an IBM Cloud-hosted sandbox on a VM dedicated to you. Other users do not share this VM or its local sandbox storage. Within your VM, each conversation runs in a separate container with its own processes and temporary workspace.
 
-The sandbox is temporary, but work saved for reuse is kept separately. After a period of inactivity, your VM is removed along with its containers and temporary workspaces, and a fresh one is created when you return. Files saved to the persistent files folder, conversation history, and memory remain available under the [data retention policy](#paver-security-data-retention).
+The sandbox is temporary, but work saved for reuse is kept separately. After a period of inactivity, your VM is removed along with its containers and temporary workspaces, and a fresh one is created when you return. Files that are saved to the persistent files folder, conversation history, and memory remain available under the [data retention policy](#paver-security-data-retention).
 
 Your persistent files are available across your own conversations. Paver checks your identity when you access them and limits each sandbox's access to your file storage. Other users cannot access these files through Paver. Saved files are [encrypted at rest in {{site.data.keyword.cos_full}}](/docs/cloud-object-storage?topic=cloud-object-storage-encryption), and file transfers are encrypted using TLS.
 
@@ -64,17 +64,17 @@ The Paver CLI (`paver`) is downloaded directly from your Paver service instance.
 
 Login to Paver uses the same IBMid as IBM Cloud. There is no separate Paver identity or password. All IBM Cloud account policies for passwords, session duration, and MFA apply automatically to Paver.
 
-- Multi-factor authentication (MFA) is governed by your IBM Cloud account policy. Enforce MFA at the IBM Cloud account level to require it for Paver access.
+- MFA is governed by your IBM Cloud account policy. Enforce MFA at the IBM Cloud account level to require it for Paver access.
 - Session expiry follows your IBM Cloud IAM session policy.
 
 ### Paver runs as the user
 {: #paver-security-runs-as-user}
 
-Paver acts on behalf of the authenticated user using their credentials. It does not use a shared service account. Actions taken by Paver against IBM Cloud resources are logged as that user's actions in IBM Cloud {{site.data.keyword.at_short}}, which is the same as if the user had performed those actions directly via the CLI or console. This means:
+Paver acts on behalf of the authenticated user using their credentials. It does not use a shared service account. Actions taken by Paver against IBM Cloud resources are logged as that user's actions in IBM Cloud {{site.data.keyword.at_short}}, which is the same as if the user had performed those actions directly by using the CLI or console. This means:
 
 - Paver can't exceed the permissions of the authenticated user.
 - Revoking a user's IBM Cloud IAM access immediately prevents Paver from acting on their behalf.
-- Principle of least privilege applies. Users should be granted only the IBM Cloud IAM roles they need, and Paver will be bounded by those roles.
+- The principle of least privilege applies. Users should be granted only the IBM Cloud IAM roles they need, and Paver will be bounded by those roles.
 
 ### User management
 {: #paver-security-user-management}
@@ -91,7 +91,7 @@ IBM operators can access Paver service data only under controlled operator acces
 
 All Paver service data (conversations, memories, files) is stored in IBM-managed {{site.data.keyword.postgresql}} and {{site.data.keyword.cos_short}}, using IBM-managed encryption at rest compliant with IBM Cloud security standards. Sandbox execution environments use local block storage on the hosting VM, also managed by IBM.
 
-All data in transit between the Paver client (CLI or web UI) and between all Paver compontents is encrypted using TLS.
+All data in transit between the Paver client (CLI or web UI) and between all Paver components is encrypted using TLS.
 
 ### Secrets management
 {: #paver-security-secrets-management}
@@ -129,11 +129,11 @@ Context matters significantly. Paver Guard considers the full conversation conte
 Users can configure a risk threshold policy:
 - **Prompt on medium or high risk** (default): Paver pauses and asks for explicit confirmation before proceeding with any medium- or high-risk action.
 - **Auto-deny high risk**: If Paver identifies a high-risk action, it will first attempt to find an alternative approach. After several unsuccessful attempts, if no lower-risk path exists, Paver returns to the user and asks for permission to proceed.
-- **Auto-deny medium or above**: Same behaviour as above, applied to both medium- and high-risk actions.
+- **Auto-deny medium or above**: Same behavior as described for auto-deny high risk, applied to both medium- and high-risk actions.
 
 Auto-deny policies are best understood as a strong preference, not an absolute block. Paver will exhaust alternatives before escalating back to the user. To prevent Paver from making any changes whatsoever, use safe mode instead.
 
-### Safe mode and edit mode
+### Safety modes
 {: #paver-security-safe-edit-mode}
 
 Paver operates in **safe mode** by default. In safe mode, Paver will not execute any action that modifies a resource. It can read, query, analyze, and report, but cannot create, update, or delete anything. Safe mode is the appropriate control when you want a hard guarantee that no changes will be made.
@@ -150,7 +150,7 @@ Review the following administrative best practices for Paver:
 
 - Train users on the difference between safe mode and edit mode and when each is appropriate.
 - Use IBM Cloud IAM deny policies to hard-limit what Paver can do for users who should not be making infrastructure changes.
-- Review conversation history periodically to audit what actions Paver has taken on behalf of your users (see [Logging and Conversation History](#paver-security-logging-history) below).
+- Review conversation history periodically to audit what actions Paver has taken on behalf of your users. For more information, see [Logging and Conversation History](#paver-security-logging-history).
 
 ## Logging and conversation history
 {: #paver-security-logging-history}
@@ -160,7 +160,7 @@ Paver integrates with {{site.data.keyword.cloudaccesstraillong}} and maintains p
 ### {{site.data.keyword.at_full_notm}}
 {: #paver-security-activity-tracker}
 
-Because Paver acts on behalf of the authenticated user using their own credentials, all actions are recorded in {{site.data.keyword.at_short}} as events performed by that user and not by Paver. There is no distinction in {{site.data.keyword.at_short}} between an action the user took directly and an action Paver took on their behalf. This means existing {{site.data.keyword.at_short}} queries, alerts, and compliance tooling work without any modification.
+Because Paver acts on behalf of the authenticated user using their own credentials, all actions are recorded in {{site.data.keyword.at_short}} as events performed by that user and not by Paver. There is no distinction in {{site.data.keyword.at_short}} between an action that the user took directly and an action Paver took on their behalf. This means existing {{site.data.keyword.at_short}} queries, alerts, and compliance tools work without any modification.
 
 To determine exactly what a user asked Paver to do, what Paver did in response, and what occurred in IBM Cloud as a result, the {{site.data.keyword.at_short}} record can be correlated with the user's Paver conversation history. For more information, see [Correlating Conversation History with {{site.data.keyword.at_short}}](#paver-security-correlating-history-activity-tracker).
 
@@ -225,7 +225,7 @@ Paver does not currently produce its own structured audit log stream. There is n
 
 For audit purposes, the two available sources are:
 - IBM Cloud {{site.data.keyword.at_short}} that records all IBM Cloud API actions performed under the user's identity
-- Paver conversation history which records everything the user asked, every action Paver took, and all outcomes
+- Paver conversation history, which records everything the user asked, every action Paver took, and all outcomes
 
 Together these provide a complete picture of what a user did through Paver and what happened in IBM Cloud as a result.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-10"
+lastupdated: "2026-10-12"
 
 keywords: paver known issues, paver limitations, context-based restrictions, IBM Cloud API 403, IBM_CLOUD_REQ_CTX, context token, trusted profiles, human oversight, AI operations, paver guard
 
@@ -25,7 +25,7 @@ If your {{site.data.keyword.cloud_notm}} account uses context-based restrictions
 
 Paver handles context-based restrictions by creating a context token that captures your client IP address and injecting it into the sandbox as the `IBM_CLOUD_REQ_CTX` environment variable. The Paver CLI and built-in scripts automatically include this token when calling {{site.data.keyword.cloud_notm}} APIs. However, this token is not automatically included when you write a prompt that asks Paver to call an {{site.data.keyword.cloud_notm}} API directly with `curl` or a custom script. Without the token, context-based restrictions rules can't verify your client context, and the API call fails with a `403 Forbidden` error.
 
-For steps to resolve this issue, see [Why do my direct API calls return a 403 error in the Paver sandbox?](/docs/paver?topic=paver-troubleshoot-cbr-403).
+For steps to resolve this issue, see [Why do my direct API calls return a 403 error in the Paver sandbox?](/docs/paver?topic=paver-troubleshoot-cbr-403)
 
 ## Trusted profiles are not supported for Paver sessions
 {: #known-issue-trusted-profiles}

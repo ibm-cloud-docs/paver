@@ -35,7 +35,7 @@
     },
     {
       "title": "Chat commands reference",
-      "description": "Quick guide to commonly use slash commands in interactive chat sessions.",
+      "description": "Quick guide for slash commands used in an interactive chat session.",
       "href": "https://paver.ibm.com/docs/tui-reference",
       "type": "article",
       "recommended": true

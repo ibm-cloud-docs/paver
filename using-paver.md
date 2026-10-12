@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-12"
 
 keywords: using paver, paver cli, paver chat, paver ask, update paver cli
 
@@ -15,7 +15,7 @@ subcollection: paver
 # Starting an interactive chat with IBM Paver in {{site.data.keyword.cloud_notm}}
 {: #paver-using}
 
-Learn how to work with Paver, start chat sessions console and CLI, ask questions, and keep your CLI updated. From discovering what Paver can do to working in the CLI, Paver is the best guide to help you be successful.
+Learn how to work with Paver by starting an interactive chat session in the console and CLI. From discovering what Paver can do to working in the CLI, Paver is the best guide to help you be successful.
 {: shortdesc}
 
 Ask Paver directly
