@@ -4,7 +4,7 @@ copyright:
   years: 2026
 lastupdated: "2026-10-12"
 
-keywords: paver security, paver security guide, paverguard, safe mode, {{site.data.keyword.at_short}}, secrets management, data retention
+keywords: paver security, paver security guide, paverguard, safety mode, safe mode, edit mode, {{site.data.keyword.at_short}}, secrets management, data retention
 
 subcollection: paver
 
@@ -128,19 +128,21 @@ Context matters significantly. Paver Guard considers the full conversation conte
 
 Users can configure a risk threshold policy:
 - **Prompt on medium or high risk** (default): Paver pauses and asks for explicit confirmation before proceeding with any medium- or high-risk action.
-- **Auto-deny high risk**: If Paver identifies a high-risk action, it will first attempt to find an alternative approach. After several unsuccessful attempts, if no lower-risk path exists, Paver returns to the user and asks for permission to proceed.
+- **Auto-deny high risk**: Paver Guard automatically denies Paver's first attempt at a high-risk action and instructs Paver to find another way to complete the task. If Paver can't find a lower-risk approach after several attempts, it returns to the user and asks for permission to run the high-risk action.
 - **Auto-deny medium or above**: Same behavior as described for auto-deny high risk, applied to both medium- and high-risk actions.
 
-Auto-deny policies are best understood as a strong preference, not an absolute block. Paver will exhaust alternatives before escalating back to the user. To prevent Paver from making any changes whatsoever, use safe mode instead.
+Auto-deny policies are not an absolute block. They steer Paver toward lower-risk approaches, but Paver can still ask for your permission to run a denied action if no alternative exists. To completely block Paver from modifying your resources, use Safe mode instead.
 
-### Safety modes
+### Safety mode
 {: #paver-security-safe-edit-mode}
 
-Paver operates in **safe mode** by default. In safe mode, Paver will not execute any action that modifies a resource. It can read, query, analyze, and report, but cannot create, update, or delete anything. Safe mode is the appropriate control when you want a hard guarantee that no changes will be made.
+Safety mode controls whether Paver can modify your cloud resources. You switch between two modes: **Safe mode** and **Edit mode**.
 
-To allow modifying actions, the user must explicitly switch to **edit mode** (`paver mode edit`). Edit mode remains active for the session and all actions in edit mode are still subject to PaverGuard risk assessment.
+Paver operates in **Safe mode** by default. In Safe mode, Paver does not execute any action that modifies a resource. It can read, query, analyze, and report on your cloud account, but it cannot create, update, or delete resources. Paver can still read and write files in its sandbox, so you can explore your account safely and plan changes, including creating scripts or Terraform to implement those plans. However, Paver cannot run those scripts or apply those plans in Safe mode. Safe mode is the appropriate control when you want a hard guarantee that no resources will be modified.
 
-A recommended practice for shared or sensitive environments is to keep Paver in safe mode as the default and require users to consciously switch to edit mode when changes are intended.
+To allow Paver to modify resources, the user must explicitly switch to **Edit mode** (`paver mode edit`). Edit mode remains active for the session and all actions in Edit mode are still subject to PaverGuard risk assessment.
+
+A recommended practice for shared or sensitive environments is to keep Paver in Safe mode as the default and require users to consciously switch to Edit mode when changes are intended.
 {: tip}
 
 ### Administrative best practices
@@ -148,7 +150,7 @@ A recommended practice for shared or sensitive environments is to keep Paver in 
 
 Review the following administrative best practices for Paver:
 
-- Train users on the difference between safe mode and edit mode and when each is appropriate.
+- Train users on how to use safety mode, including the difference between Safe mode and Edit mode and when each is appropriate.
 - Use IBM Cloud IAM deny policies to hard-limit what Paver can do for users who should not be making infrastructure changes.
 - Review conversation history periodically to audit what actions Paver has taken on behalf of your users. For more information, see [Logging and Conversation History](#paver-security-logging-history).
 

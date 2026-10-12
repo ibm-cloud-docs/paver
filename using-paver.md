@@ -22,7 +22,7 @@ Ask Paver directly
 :   Run `paver ask "what can you help me with?"` or, inside a chat session ask questions like "can you help me identify resources that are rarely used" to explore what Paver can do for your task.
 
 Ask before you act
-:   You can ask Paver to explain a service, a resource, or a proposed change before letting it make one. In safe mode (the default), high-risk write operations are blocked, so exploring is low-stakes.
+:   You can ask Paver to explain a service, a resource, or a proposed change before letting it make one. In Safe mode, Paver can't modify your resources, but it can still read your resources and write files in its sandbox, such as plans, scripts, or Terraform. This makes exploring low-stakes.
 
 
 ## Starting a chat in the CLI

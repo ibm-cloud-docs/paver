@@ -35,7 +35,7 @@ You can chat with Paver directly in the {{site.data.keyword.cloud_notm}} console
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 1. From the {{site.data.keyword.cloud_notm}} console menu bar, click ![Help icon](../icons/help.svg "Help") > **Chat with Paver**. 
 
-Note the mode switcher where you can switch between Safe and Edit mode. Since you're just getting started, stay in Safe mode for now, which keeps Paver from acting on your behalf until you're ready.
+Note the mode switcher where you can change between Safe and Edit mode. Since you're just getting started, stay in Safe mode for now, which keeps Paver from modifying your resources until you're ready. You can still ask Paver to explore your account and plan changes.
 {: tip}
 
 ## Take the getting started tour
