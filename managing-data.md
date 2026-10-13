@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-10"
+lastupdated: "2026-10-13"
 
 keywords: manage paver data, paver data retention, export paver data, delete paver data, paver data residency, paver responsibilities
 
@@ -64,7 +64,7 @@ paver conversation export <id>
 
 Users can permanently delete their conversation history, memories, skills, and files.
 
-To delete your data, you can use the following commands:
+To delete your all of your data, you can use the `paver user delete-data` command. Alternatively, you can individually delete different types of data by using the following commands:
 
 Delete all files in the sandbox workspace:
 
