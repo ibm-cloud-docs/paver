@@ -15,8 +15,10 @@ toc:
         navtitle: Getting started
         tag: draft
       - topic: about.md
+        navtitle: About IBM Paver
         tag: draft
       - topic: plans.md
+        navtitle: Paver plans
         tag: draft
   - navgroup:
       id: howto
@@ -65,6 +67,7 @@ toc:
           href: https://qa.paver.ibm.com/docs/tui-reference
           tag: draft
       - topic: security.md
+        navtitle: Security guide
         tag: draft
       - topic: responsibilities.md
         navtitle: Understanding your responsibilities

@@ -12,7 +12,7 @@ subcollection: paver
 
 {{site.data.keyword.attribute-definition-list}}
 
-# IBM Paver security guide in {{site.data.keyword.cloud_notm}}
+# IBM Paver security guide for {{site.data.keyword.cloud_notm}}
 {: #paver-security-guide}
 
 IBM Paver is a cloud-hosted AI assistant service that is delivered through the IBM Cloud catalog. Because Paver is a managed service, IBM is responsible for the underlying infrastructure security, including network hardening, OS hardening, patch management, physical security, and service-level encryption. This document focuses on what customers need to know to configure and use Paver securely within their own environments.
