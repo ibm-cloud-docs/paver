@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-14"
 
 keywords: install paver cli, authenticate paver cli, paver cli macos, paver cli linux, paver cli windows, paver sso login, paver api key login
 
@@ -12,21 +12,21 @@ subcollection: paver
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Installing Paver CLI
+# Installing {{site.data.keyword.paver_full_notm}} CLI
 {: #paver-cli-install}
 
-Install the Paver CLI on your local machine and authenticate with your {{site.data.keyword.cloud_notm}} account to start working with Paver directly from the terminal.
+Install the {{site.data.keyword.paver_full}} CLI on your local machine and authenticate with your {{site.data.keyword.cloud_notm}} account to start working with {{site.data.keyword.paver}} directly from the terminal.
 {: shortdesc}
 
 ## Installing the CLI
 {: #paver-install-cli}
 
-You can install Paver CLI on macOS, Linux, or Windows.
+You can install {{site.data.keyword.paver_full_notm}} CLI on macOS, Linux, or Windows.
 
 ### macOS and Linux
 {: #paver-install-mac-linux}
 
-Run the following command to install the Paver CLI:
+Run the following command to install the {{site.data.keyword.paver_full_notm}} CLI:
 
 ```sh
 curl -fsSL https://paver.cloud.ibm.com/cli/install | bash
@@ -38,7 +38,7 @@ After the installation completes, you must [authenticate with your {{site.data.k
 ### Windows
 {: #paver-install-windows}
 
-The Paver CLI requires a Unix shell. On Windows, install it through the Windows Subsystem for Linux (WSL).
+The {{site.data.keyword.paver_full_notm}} CLI requires a Unix shell. On Windows, install it through the Windows Subsystem for Linux (WSL).
 
 #### Install Linux on WSL
 {: #paver-windows-linux}
@@ -132,11 +132,11 @@ paver update
 ## Next steps
 {: #paver-cli-next-steps}
 
-After you authenticate, start an interactive chat session with Paver:
+After you authenticate, start an interactive chat session with {{site.data.keyword.paver}}:
 
 ```sh
 paver chat
 ```
 {: pre}
 
-In the chat, you can ask Paver about itself, explore available commands, or start working with your {{site.data.keyword.cloud_notm}} account and resources.
+In the chat, you can ask {{site.data.keyword.paver}} about itself, explore available commands, or start working with your {{site.data.keyword.cloud_notm}} account and resources.

@@ -6,7 +6,7 @@ toc:
     service-name: paver
     audience: service
     category: ai
-    label: IBM Paver
+    label: IBM Paver in IBM Cloud
   entries:
   - navgroup:
       id: learn
@@ -51,6 +51,7 @@ toc:
           href: https://qa.paver.ibm.com/docs/core-concepts/skills
           tag: draft
       - topic: managing-data.md
+        navtitle: Managing your data
         tag: draft
   - navgroup:
       id: reference
@@ -66,8 +67,10 @@ toc:
       - topic: security.md
         tag: draft
       - topic: responsibilities.md
+        navtitle: Understanding your responsibilities
         tag: draft
       - topic: known-issues.md
+        navtitle: Known issues and limitations
         tag: draft
   - navgroup:
       id: help

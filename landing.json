@@ -1,23 +1,23 @@
 {
   "version": 2,
-  "title": "IBM Paver",
-  "introduction": "Learn about Paver, an agentic AI operator for infrastructure and account operations, its capabilities, and how it works with your account.",
+  "title": "IBM Paver in IBM Cloud",
+  "introduction": "Learn about IBM Paver in IBM Cloud, an agentic AI operator for infrastructure and account operations, its capabilities, and how it works within your environment.",
   "section_topics": {
     "links": [
       {
-        "title": "Learn about Paver used on IBM Cloud",
+        "title": "Learn about Paver used in IBM Cloud",
         "href": "/docs/paver?topic=paver-paver-about"
       },
       {
-        "title": "Getting started with IBM Paver on IBM Cloud",
+        "title": "Getting started with IBM Paver in IBM Cloud",
         "href": "/docs/paver?topic=paver-getting-started"
       },
       {
-        "title": "Paver plans",
+        "title": "IBM Paver plans in IBM Cloud",
         "href": "/docs/paver?topic=paver-paver-plans"
       },
       {
-        "title": "Working with Paver",
+        "title": "Working with IBM Paver in IBM Cloud",
         "href": "/docs/paver?topic=paver-paver-using"
       },
       {
