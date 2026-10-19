@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-19"
 
 keywords: paver 403 error, context-based restrictions API failure, IBM_CLOUD_REQ_CTX, IBM-Cloud-Req-Ctx, curl 403 forbidden paver
 
@@ -41,4 +41,4 @@ curl -X GET "https://resource-controller.cloud.ibm.com/v2/resource_instances" \
 {: pre}
 {: tsResolve}
 
-For more information about context-based restrictions, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis){: external}.
+For more information about context-based restrictions, see [What are context-based restrictions?](/docs/iam?topic=iam-context-restrictions-whatis){: external}.

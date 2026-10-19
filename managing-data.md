@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-14"
+lastupdated: "2026-10-19"
 
 keywords: manage paver data, paver data retention, export paver data, delete paver data, paver data residency, paver responsibilities
 
@@ -15,8 +15,10 @@ subcollection: paver
 # Managing your {{site.data.keyword.paver}} data in {{site.data.keyword.cloud_notm}}
 {: #paver-managing-data}
 
-{{site.data.keyword.paver_full}} stores information that helps personalize your experience, maintain conversation history, and provide context-aware assistance across your {{site.data.keyword.cloud}} environment. Learn what data is stored, how it is retained, how to export or delete it, and the responsibilities of {{site.data.keyword.IBM_notm}} and customers for data management and resiliency.
+Learn how to manage your {{site.data.keyword.paver_full}} data in {{site.data.keyword.cloud}}, including data retention, export, and deletion processes.
 {: shortdesc}
+
+{{site.data.keyword.paver}} stores information that helps personalize your experience, maintain conversation history, and provide context-aware assistance across your {{site.data.keyword.cloud}} environment. Learn what data is stored, how it is retained, how to export or delete it, and the responsibilities of {{site.data.keyword.IBM_notm}} and customers for data management and resiliency.
 
 ## Data storage and retention
 {: #paver-data-storage-retention}

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-12"
+lastupdated: "2026-10-19"
 
-keywords: paver help, paver support, paver feedback, troubleshoot paver
+keywords: paver help, paver support, paver feedback, troubleshoot paver, paver issue
 
 subcollection: paver
 
@@ -12,11 +12,13 @@ subcollection: paver
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting help and support with Paver
+# Getting help and support with Paver in {{site.data.keyword.cloud_notm}}
 {: #help-and-support}
 
-If you experience an issue or have questions when using Paver, start by asking Paver directly in a chat session. Paver can help diagnose and resolve many common issues. If you still can't resolve the problem, you can open a support case with IBM Cloud Support. You can also submit feedback directly from a chat session to help improve the Paver experience.
+If you experience an issue or have questions when using Paver, start by asking Paver directly in a chat session. Paver can help diagnose and resolve many common issues.
 {: shortdesc}
+
+If you still can't resolve the problem, you can open a support case with IBM Cloud Support. You can also submit feedback directly from a chat session to help improve the Paver experience.
 
 ## Ask Paver for help
 {: #paver-chat}
@@ -58,7 +60,7 @@ Before you open a case, try the following:
 * Check the status of {{site.data.keyword.cloud_notm}} platform and resources on the [Status page](https://cloud.ibm.com/status){: external} to rule out a platform-level incident.
 * Review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see whether other users ran into the same problem. When you post a question, tag it with `ibm-cloud` and `paver` so that it's visible to the {{site.data.keyword.cloud_notm}} development teams.
 
-When you're ready to open a case, go to [Creating support cases](/docs/get-support?topic=get-support-open-case) for instructions. Based on your [support plan](/docs/get-support?topic=get-support-support-plans), you might have access to more support options including priority handling and direct access to a support engineer.
+When you're ready to open a case, go to [Creating support cases](/docs/support?topic=support-open-case) for instructions. Based on your [support plan](/docs/support?topic=support-support-plans), you might have access to more support options including priority handling and direct access to a support engineer.
 
 ### Providing support case details
 {: #paver-support-case-details}

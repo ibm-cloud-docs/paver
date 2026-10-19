@@ -13,72 +13,54 @@ toc:
       topics:
       - topic: getting-started.md
         navtitle: Getting started
-        tag: draft
       - topic: about.md
         navtitle: About IBM Paver
-        tag: draft
       - topic: plans.md
         navtitle: Paver plans
-        tag: draft
   - navgroup:
       id: howto
       topics:
       - topic: cli-install.md
-        tag: draft
       - topic: using-paver.md
         navtitle: Starting an interactive chat
-        tag: draft
       - link:
           label: Managing safeguards and controls
           href: https://qa.paver.ibm.com/docs/core-concepts/managing-risk-and-control
-          tag: draft
       - link:
           label: Storing your secrets
           href: https://qa.paver.ibm.com/docs/core-concepts/keyring
-          tag: draft
       - link:
           label: Building persistent context
           href: https://qa.paver.ibm.com/docs/core-concepts/memory
-          tag: draft
       - link:
           label: Sharing files
           href: https://qa.paver.ibm.com/docs/core-concepts/files
-          tag: draft
       - link:
           label: Using the interactive shell
           href: https://qa.paver.ibm.com/docs/core-concepts/shell
-          tag: draft
       - link:
           label: Extending Paver with skills
           href: https://qa.paver.ibm.com/docs/core-concepts/skills
-          tag: draft
       - topic: managing-data.md
         navtitle: Managing your data
-        tag: draft
   - navgroup:
       id: reference
       topics:
       - link:
           label: CLI reference
           href: https://qa.paver.ibm.com/docs/cli-reference
-          tag: draft
       - link:
           label: Chat commands
           href: https://qa.paver.ibm.com/docs/tui-reference
-          tag: draft
       - topic: security.md
         navtitle: Security guide
-        tag: draft
       - topic: responsibilities.md
         navtitle: Understanding your responsibilities
-        tag: draft
       - topic: known-issues.md
         navtitle: Known issues and limitations
-        tag: draft
   - navgroup:
       id: help
       topics:
       - topic: troubleshoot.md
-        tag: draft
       - topic: get-help.md
-        tag: draft
+        navtitle: Getting help and support

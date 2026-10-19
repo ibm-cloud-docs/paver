@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-14"
+lastupdated: "2026-10-19"
 
 keywords: paver overview, what is paver, agentic ai, infrastructure operations, paver capabilities, paver security
 
@@ -15,8 +15,10 @@ subcollection: paver
 # About {{site.data.keyword.paver_full_notm}} in {{site.data.keyword.cloud_notm}}
 {: #paver-about}
 
-Learn about {{site.data.keyword.paver_full}}, {{site.data.keyword.IBM}}'s embedded agentic AI operator for {{site.data.keyword.IBM_notm}} infrastructure operations, its capabilities, and how it works with your account. {{site.data.keyword.paver}} is available within supported {{site.data.keyword.IBM_notm}} offerings, such as {{site.data.keyword.cloud}}. For more information, see [{{site.data.keyword.paver_full_notm}}](https://paver.ibm.com/){: external}.
+Learn about {{site.data.keyword.paver_full}}, {{site.data.keyword.IBM}}'s embedded agentic AI operator for {{site.data.keyword.IBM_notm}} infrastructure operations, its capabilities, and how it works with your account.
 {: shortdesc}
+
+{{site.data.keyword.paver}} is available within supported {{site.data.keyword.IBM_notm}} offerings, such as {{site.data.keyword.cloud}}. For more information, see [{{site.data.keyword.paver_full_notm}}](https://paver.ibm.com/){: external}.
 
 In {{site.data.keyword.cloud_notm}}, {{site.data.keyword.paver}} is a built-in agentic AI operator that helps you deploy, operate, and troubleshoot your cloud resources through natural language. It is available directly in the {{site.data.keyword.cloud_notm}} console and through the {{site.data.keyword.paver_full_notm}} CLI, so you can work with your accounts, services, and infrastructure without switching between tools.
 
