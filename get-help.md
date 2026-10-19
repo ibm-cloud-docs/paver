@@ -23,7 +23,7 @@ If you still can't resolve the problem, you can open a support case with IBM Clo
 ## Ask Paver for help
 {: #paver-chat}
 
-The fastest way to get help is to ask Paver directly. Paver can help you understand its capabilities, available commands, and their usage, and how to troubleshoot issues that arise. If you get to a point where you need extra support, ask Paver. Based on your [support plan](/docs/support?topic=support-support-plans), you can work with Paver to open a support case or connect with a live support engineer.
+The fastest way to get help is to ask Paver directly. Paver can help you understand its capabilities, available commands, and their usage, and how to troubleshoot issues that arise. If you get to a point where you need additional support, ask Paver. Based on your [support plan](/docs/support?topic=support-support-plans), you can work with Paver to open a support case or connect with a live support engineer.
 
 * In an interactive chat with Paver in the console, explain what issue you're having and work with Paver to resolve it.
 * If you're using the CLI, start a chat or use the help commands:

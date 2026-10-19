@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-12"
+lastupdated: "2026-10-19"
 
 keywords: using paver, paver cli, paver chat, paver ask, update paver cli
 
@@ -19,14 +19,14 @@ Learn how to work with Paver by starting an interactive chat session in the cons
 {: shortdesc}
 
 Ask Paver directly
-:   Run `paver ask "what can you help me with?"` or, inside a chat session ask questions like "can you help me identify resources that are rarely used" to explore what Paver can do for your task.
+:   Run `paver ask "what can you help me with?"` or inside a chat session ask questions like `can you help me identify resources that are rarely used` to explore what Paver can do for your task.
 
 Ask before you act
 :   You can ask Paver to explain a service, a resource, or a proposed change before letting it make one. In Safe mode, Paver can't modify your resources, but it can still read your resources and write files in its sandbox, such as plans, scripts, or Terraform. This makes exploring low-stakes.
 
 
 ## Starting a chat in the CLI
-{: #paver-chat-session}
+{: #paver-chat-session-cli}
 {: cli}
 
 In the CLI, start an interactive chat session:

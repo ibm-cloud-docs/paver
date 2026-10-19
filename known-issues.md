@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-14"
+lastupdated: "2026-10-19"
 
 keywords: paver known issues, paver limitations, context-based restrictions, IBM Cloud API 403, IBM_CLOUD_REQ_CTX, context token, trusted profiles, human oversight, AI operations, paver guard
 
@@ -39,4 +39,4 @@ To use Paver, log in to the console with your standard user identity rather than
 
 Paver, like all AI agents, can make mistakes when reasoning about your environment or executing tasks. It attempts to detect and correct its own errors automatically, but it can get stuck and be unable to proceed on its own. If Paver gets stuck, describe a different approach in the chat. For example, suggest an alternative command, a different order of operations, or a simpler way to achieve the same goal. Paver incorporates your suggestion and continues from there.
 
-Give extra attention to operations that Paver Guard flags as high risk. High-risk operations have a greater potential impact on your environment, and a careful review before you approve those steps reduces the chance of a hard-to-reverse error. For more information, see [Managing safeguards and controls](https://paver.ibm.com/docs/core-concepts/managing-risk-and-control){: external}.
+Give additional attention to operations that Paver Guard flags as high risk. High-risk operations have a greater potential impact on your environment, and a careful review before you approve those steps reduces the chance of a hard-to-reverse error. For more information, see [Managing safeguards and controls](https://paver.ibm.com/docs/core-concepts/managing-risk-and-control){: external}.
