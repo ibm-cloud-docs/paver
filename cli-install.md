@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-14"
+lastupdated: "2026-10-20"
 
 keywords: install paver cli, authenticate paver cli, paver cli macos, paver cli linux, paver cli windows, paver sso login, paver api key login
 
@@ -38,48 +38,72 @@ After the installation completes, you must [authenticate with your {{site.data.k
 ### Windows
 {: #paver-install-windows}
 
-The {{site.data.keyword.paver_full_notm}} CLI requires a Unix shell. On Windows, install it through the Windows Subsystem for Linux (WSL).
+On Windows, install the {{site.data.keyword.paver_full_notm}} CLI by using PowerShell.
 
-#### Install Linux on WSL
-{: #paver-windows-linux}
+#### Before you begin
+{: #paver-windows-prereqs}
 
-1. Open PowerShell with **Run as Administrator**.
-1. Run the following command to install Ubuntu by default:
+Make sure that you have the following prerequisites:
 
-   ```sh
-   wsl --install
+* Windows 10 or 11
+* PowerShell 5.1
+* Node.js version 24 or later
+
+#### Set up your PowerShell working directory
+{: #paver-windows-workdir}
+
+1. Start PowerShell with **Run as administrator**.
+
+   When you start PowerShell as an administrator, the default working directory is `C:\Windows\system32`.
+   {: note}
+
+1. Create a dedicated working directory, such as `C:\Paver`, and change to that directory:
+
+   ```powershell
+   New-Item -ItemType Directory -Path C:\Paver -Force
+   Set-Location C:\Paver
    ```
    {: pre}
 
-1. Complete the Unix account creation prompts when WSL restarts.
-
-#### Install Node.js on WSL
-{: #paver-node-on-wsl}
-
-1. Run the following command inside WSL:
-
-   ```sh
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-   ```
-   {: pre}
-
-1. Restart the WSL terminal.
-1. Install Node.js:
-
-   ```sh
-   nvm install node
-   ```
-   {: pre}
+Do not run setup commands or store files in `C:\Windows\system32`.
+{: important}
 
 #### Install the Paver CLI on Windows
 {: #paver-install-windows-cli}
 
-In PowerShell (not WSL), run:
+1. In the PowerShell window that you started as an administrator, make sure that your current working directory is `C:\Paver`.
+1. Run the following command:
 
-```sh
-iwr https://paver.cloud.ibm.com/cli/install.ps1 | iex
-```
-{: pre}
+   ```powershell
+   iwr https://paver.cloud.ibm.com/cli/install.ps1 | iex
+   ```
+   {: pre}
+
+1. After the installer completes, open a new PowerShell window as an administrator and change to the `C:\Paver` directory.
+
+   ```powershell
+   Set-Location C:\Paver
+   ```
+   {: pre}
+
+   Existing PowerShell windows don't pick up the updated `PATH`, so you must open a new window.
+   {: important}
+
+1. Verify the installation. A version string is displayed.
+
+   ```powershell
+   paver.cmd --version
+   ```
+   {: pre}
+
+1. Update the CLI to the latest version, even if the CLI was already installed.
+
+   ```powershell
+   paver.cmd update --yes
+   ```
+   {: pre}
+
+After the installation completes, you must [authenticate with your {{site.data.keyword.cloud_notm}} account](/docs/paver?topic=paver-paver-cli-install#paver-authentication) and target a specific account to get started.
 
 ## Authenticating with Paver CLI
 {: #paver-authentication}
