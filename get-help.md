@@ -70,19 +70,19 @@ The type of case that you can open depends on your [support plan](/docs/support?
 Your feedback is valuable in helping improve the {{site.data.keyword.paver}} experience. Submit feedback directly from an interactive chat session:
 
 ```sh
-/feedback "Your feedback message here"
+/feedback create "Your feedback message here"
 ```
 {: pre}
 
 The following examples show feedback submissions:
 
 ```sh
-/feedback "This was great! I successfully automated a complex deployment workflow"
+/feedback create "This was great! I successfully automated a complex deployment workflow"
 ```
 {: pre}
 
 ```sh
-/feedback "Encountered difficulty with resource provisioning commands"
+/feedback create "Encountered difficulty with resource provisioning commands"
 ```
 {: pre}
 
