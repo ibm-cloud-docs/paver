@@ -20,7 +20,7 @@ Install the {{site.data.keyword.paver_full}} CLI and authenticate with your {{si
 
 You can install {{site.data.keyword.paver_full_notm}} CLI on macOS, Linux, or Windows.
 
-## macOS and Linux
+## Install {{site.data.keyword.paver}} CLI on macOS and Linux
 {: #paver-install-mac-linux}
 
 Run the following command to install the {{site.data.keyword.paver_full_notm}} CLI:
@@ -32,7 +32,7 @@ curl -fsSL https://paver.cloud.ibm.com/cli/install | bash
 
 After the installation completes, you must [authenticate with your {{site.data.keyword.cloud_notm}} account](/docs/paver?topic=paver-paver-cli-install#paver-authentication) and target a specific account to get started.
 
-## Windows
+## Install {{site.data.keyword.paver}} CLI on  Windows
 {: #paver-install-windows}
 
 On Windows, install the {{site.data.keyword.paver_full_notm}} CLI by using PowerShell.
