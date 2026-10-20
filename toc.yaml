@@ -25,22 +25,22 @@ toc:
         navtitle: Starting an interactive chat
       - link:
           label: Managing safeguards and controls
-          href: https://qa.paver.ibm.com/docs/core-concepts/managing-risk-and-control
+          href: https://paver.ibm.com/docs/core-concepts/managing-risk-and-control
       - link:
           label: Storing your secrets
-          href: https://qa.paver.ibm.com/docs/core-concepts/keyring
+          href: https://paver.ibm.com/docs/core-concepts/keyring
       - link:
           label: Building persistent context
-          href: https://qa.paver.ibm.com/docs/core-concepts/memory
+          href: https://paver.ibm.com/docs/core-concepts/memory
       - link:
           label: Sharing files
-          href: https://qa.paver.ibm.com/docs/core-concepts/files
+          href: https://paver.ibm.com/docs/core-concepts/files
       - link:
           label: Using the interactive shell
-          href: https://qa.paver.ibm.com/docs/core-concepts/shell
+          href: https://paver.ibm.com/docs/core-concepts/shell
       - link:
           label: Extending Paver with skills
-          href: https://qa.paver.ibm.com/docs/core-concepts/skills
+          href: https://paver.ibm.com/docs/core-concepts/skills
       - topic: managing-data.md
         navtitle: Managing your data
   - navgroup:
@@ -48,10 +48,10 @@ toc:
       topics:
       - link:
           label: CLI reference
-          href: https://qa.paver.ibm.com/docs/cli-reference
+          href: https://paver.ibm.com/docs/cli-reference
       - link:
           label: Chat commands
-          href: https://qa.paver.ibm.com/docs/tui-reference
+          href: https://paver.ibm.com/docs/tui-reference
       - topic: security.md
         navtitle: Security guide
       - topic: responsibilities.md
