@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-19"
+lastupdated: "2026-10-20"
 
 keywords: manage paver data, paver data retention, export paver data, delete paver data, paver data residency, paver responsibilities
 
@@ -106,3 +106,12 @@ Alternatively, you can delete individual conversations by ID by using `paver con
 All {{site.data.keyword.paver}} data, including conversation history, memories, skills, and files, is stored and processed exclusively in the {{site.data.keyword.cloud_notm}} region in which {{site.data.keyword.paver}} is hosted for your account. If a region becomes unavailable, data stored in that region is not accessible from another region.
 
 The only exception is AI inferencing, which is currently performed in the `us-east`, regardless of the region where {{site.data.keyword.paver}} is hosted. To generate a response, {{site.data.keyword.paver}} sends prompts and related content to an IBM AI model inferencing service in the `us-east` region. The inferencing service does not retain prompts or responses. Support for AI inferencing in additional {{site.data.keyword.cloud_notm}} regions is planned, so that inferencing can co-reside with the region in which your data is stored.
+
+You can view the region where your Paver instance is storing data in the console:
+
+1. Go to ![Help icon](../icons/help.svg "Help") **Help** menu > **Ask Paver**.
+1. Click ![Settings](../icons/settings.svg "Settings icon") **Settings**, then click **All settings**.
+1. Go to **Region**.
+
+If you need to update the region, select a new region for **Current region**, and accept the disclaimer warning you that your data will not be transferred automatically.  Then, click **Change region**.
+{: tip}
