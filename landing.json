@@ -1,23 +1,23 @@
 {
   "version": 2,
-  "title": "IBM Paver in IBM Cloud",
-  "introduction": "Learn about IBM Paver in IBM Cloud, an agentic AI operator for infrastructure and account operations, its capabilities, and how it works within your environment.",
+  "title": "IBM Paver for IBM Cloud",
+  "introduction": "Learn about IBM Paver for IBM Cloud, an agentic AI operator for infrastructure and account operations, its capabilities, and how it works within your environment.",
   "section_topics": {
     "links": [
       {
-        "title": "Learn about Paver used in IBM Cloud",
+        "title": "Learn about Paver for IBM Cloud",
         "href": "/docs/paver?topic=paver-paver-about"
       },
       {
-        "title": "Getting started with IBM Paver in IBM Cloud",
+        "title": "Getting started with IBM Paver for IBM Cloud",
         "href": "/docs/paver?topic=paver-getting-started"
       },
       {
-        "title": "IBM Paver plans in IBM Cloud",
+        "title": "IBM Paver plans for IBM Cloud",
         "href": "/docs/paver?topic=paver-paver-plans"
       },
       {
-        "title": "Working with IBM Paver in IBM Cloud",
+        "title": "Working with IBM Paver for IBM Cloud",
         "href": "/docs/paver?topic=paver-paver-using"
       },
       {
@@ -31,14 +31,14 @@
       "title": "IBM Paver",
       "description": "Meet Paver. IBM's AI-native infrastructure operator pupose-built for the way teams work.",
       "href": "https://paver.ibm.com/",
-      "type": "article"
+      "type": "article",
+      "recommended": true
     },
     {
       "title": "Chat commands reference",
       "description": "Quick guide for slash commands used in an interactive chat session.",
       "href": "https://paver.ibm.com/docs/tui-reference",
-      "type": "article",
-      "recommended": true
+      "type": "article"
     }
   ]
 }

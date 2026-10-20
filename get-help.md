@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026, 2026
-lastupdated: "2026-10-19"
+lastupdated: "2026-10-20"
 
 keywords: paver help, paver support, paver feedback, troubleshoot paver, paver issue
 
@@ -12,20 +12,20 @@ subcollection: paver
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting help and support with Paver in {{site.data.keyword.cloud_notm}}
+# Getting help and support with {{site.data.keyword.paver_full_notm}} for {{site.data.keyword.cloud_notm}}
 {: #help-and-support}
 
-If you experience an issue or have questions when using Paver, start by asking Paver directly in a chat session. Paver can help diagnose and resolve many common issues.
+If you experience an issue or have questions when using {{site.data.keyword.paver_full}}, start by asking {{site.data.keyword.paver}} directly in a chat session. {{site.data.keyword.paver}} can help diagnose and resolve many common issues.
 {: shortdesc}
 
-If you still can't resolve the problem, you can request help without ever leaving the conversation. Paver can help guide you through opening a support case with context from your conversation already included. You can also submit feedback directly from a chat session to help improve the Paver experience.
+If you still can't resolve the problem, you can request help without ever leaving the conversation. You can ask {{site.data.keyword.paver}} to open a support case for you, with details from your conversation already included. You can also submit feedback directly from a chat session to help improve the Paver experience.
 
-## Ask Paver for help
+## Ask {{site.data.keyword.paver}} for help
 {: #paver-chat}
 
-The fastest way to get help is to ask Paver directly. Paver can help you understand its capabilities, available commands, their usage, and how to troubleshoot issues.
+The fastest way to get help is to ask {{site.data.keyword.paver}} directly. {{site.data.keyword.paver}} can help you understand its capabilities, available commands, their usage, and how to troubleshoot issues.
 
-- In an interactive chat with Paver in the console, explain what issue you're having and work with Paver to resolve it.
+- In an interactive chat with {{site.data.keyword.paver}} in the console, explain what issue you're having and work with {{site.data.keyword.paver}} to resolve it.
 - If you're using the CLI, start a chat or use the help commands:
 
    Start an interactive session in the CLI by running the following command:
@@ -53,26 +53,28 @@ The fastest way to get help is to ask Paver directly. Paver can help you underst
 ## Opening a support case
 {: #paver-support-case}
 
-If you can't resolve an issue by asking Paver or reviewing the documentation, ask Paver to open a support case. Paver pre-populates the case with context from your conversation, including relevant session details, so you don't need to describe the issue from scratch.
+If you can't resolve an issue by troubleshooting with {{site.data.keyword.paver}} or reviewing the documentation, ask {{site.data.keyword.paver}} to open a support case. You can do this in an interactive chat in the CLI or in the console.
 
 Before you open a case, check the following:
 
 - Check the status of {{site.data.keyword.cloud_notm}} platform and resources on the [Status page](https://cloud.ibm.com/status){: external} to rule out a platform-level incident.
 - Review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see whether other users encountered the same problem. When you post a question, tag it with `ibm-cloud` and `paver` so that it's visible to the {{site.data.keyword.cloud_notm}} development teams.
 
-To open a case from the conversation, ask Paver by using natural language. For example, you can ask Paver to *"Open a support case"* or *"I need to submit a support case."* Paver guides you through the required details and submits the case. To open a case manually, see [Creating support cases](/docs/support?topic=support-open-case).
+To open a case from the conversation, tell {{site.data.keyword.paver}} in natural language that you need to open a support case about a specific issue. For example, you can say `Open a support case about my failed deployment` or `I need to submit a support case for a provisioning error.` {{site.data.keyword.paver}} opens the case for you and populates the case name, description, and other details based on your conversation about the issue, so you don't need to describe the issue from scratch.
 
-## Submitting feedback in Paver
+The type of case that you can open depends on your [support plan](/docs/support?topic=support-support-plans). For example, if you have a Basic support plan, you can't open technical cases. To open a case manually, see [Creating support cases](/docs/support?topic=support-open-case).
+
+## Submitting feedback in {{site.data.keyword.paver}}
 {: #paver-feedback}
 
-Your feedback is valuable in helping improve the Paver experience. Submit feedback directly from an interactive chat session:
+Your feedback is valuable in helping improve the {{site.data.keyword.paver}} experience. Submit feedback directly from an interactive chat session:
 
 ```sh
 /feedback "Your feedback message here"
 ```
 {: pre}
 
-The following examples show helpful feedback messages:
+The following examples show feedback submissions:
 
 ```sh
 /feedback "This was great! I successfully automated a complex deployment workflow"
@@ -83,6 +85,8 @@ The following examples show helpful feedback messages:
 /feedback "Encountered difficulty with resource provisioning commands"
 ```
 {: pre}
+
+You can also use the `feedback create FEEDBACK` command in the CLI.
 
 When you submit feedback, relevant logs and diagnostic data are automatically sent for analysis.
 {: note}
