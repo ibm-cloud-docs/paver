@@ -43,6 +43,13 @@ toc:
           href: https://qa.paver.ibm.com/docs/core-concepts/skills
       - topic: managing-data.md
         navtitle: Managing your data
+      - topicgroup:
+          id: observability
+          label: Observability
+          topics:
+          - topic: at-events.md
+            navtitle: Activity tracking events
+            tag: draft
   - navgroup:
       id: reference
       topics:
