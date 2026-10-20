@@ -58,6 +58,10 @@ Make sure that you have the following prerequisites:
 
    ```powershell
    New-Item -ItemType Directory -Path C:\Paver -Force
+   ```
+   {: pre}
+
+   ```powershell
    Set-Location C:\Paver
    ```
    {: pre}
@@ -89,14 +93,14 @@ Do not run setup commands or store files in `C:\Windows\system32`.
 1. Verify the installation. A version string is displayed.
 
    ```powershell
-   paver.cmd --version
+   paver --version
    ```
    {: pre}
 
 1. Update the CLI to the latest version, even if the CLI was already installed.
 
    ```powershell
-   paver.cmd update --yes
+   paver update --yes
    ```
    {: pre}
 
