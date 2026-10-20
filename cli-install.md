@@ -15,15 +15,12 @@ subcollection: paver
 # Installing {{site.data.keyword.paver_full_notm}} CLI
 {: #paver-cli-install}
 
-Install the {{site.data.keyword.paver_full}} CLI on your local machine and authenticate with your {{site.data.keyword.cloud_notm}} account to start working with {{site.data.keyword.paver}} directly from the terminal.
+Install the {{site.data.keyword.paver_full}} CLI and authenticate with your {{site.data.keyword.cloud_notm}} account to start working with {{site.data.keyword.paver}} directly from the terminal.
 {: shortdesc}
-
-## Installing the CLI
-{: #paver-install-cli}
 
 You can install {{site.data.keyword.paver_full_notm}} CLI on macOS, Linux, or Windows.
 
-### macOS and Linux
+## macOS and Linux
 {: #paver-install-mac-linux}
 
 Run the following command to install the {{site.data.keyword.paver_full_notm}} CLI:
@@ -35,12 +32,12 @@ curl -fsSL https://paver.cloud.ibm.com/cli/install | bash
 
 After the installation completes, you must [authenticate with your {{site.data.keyword.cloud_notm}} account](/docs/paver?topic=paver-paver-cli-install#paver-authentication) and target a specific account to get started.
 
-### Windows
+## Windows
 {: #paver-install-windows}
 
 On Windows, install the {{site.data.keyword.paver_full_notm}} CLI by using PowerShell.
 
-#### Before you begin
+### Before you begin
 {: #paver-windows-prereqs}
 
 Make sure that you have the following prerequisites:
@@ -49,7 +46,7 @@ Make sure that you have the following prerequisites:
 * PowerShell 5.1
 * Node.js version 24 or later
 
-#### Set up your PowerShell working directory
+### Set up your PowerShell working directory
 {: #paver-windows-workdir}
 
 1. Start PowerShell with **Run as administrator**.
@@ -68,7 +65,7 @@ Make sure that you have the following prerequisites:
 Do not run setup commands or store files in `C:\Windows\system32`.
 {: important}
 
-#### Install the Paver CLI on Windows
+### Install the Paver CLI on Windows
 {: #paver-install-windows-cli}
 
 1. In the PowerShell window that you started as an administrator, make sure that your current working directory is `C:\Paver`.
