@@ -169,4 +169,7 @@ paver chat
 ```
 {: pre}
 
-In the chat, you can ask {{site.data.keyword.paver}} about itself, explore available commands, or start working with your {{site.data.keyword.cloud_notm}} account and resources.
+In the chat, you can ask {{site.data.keyword.paver}} about itself, explore available commands, or start working with your {{site.data.keyword.cloud_notm}} account and resources. For more information, see [Tips for chatting with {{site.data.keyword.paver}}](/docs/paver?topic=paver-paver-using#chat-tips).
+
+After you start an interactive chat, you can change your theme with the `/theme` command, Use `/theme list` to see the options, and then `/theme update <name>` to change it
+{: tip}
