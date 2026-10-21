@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-20"
+lastupdated: "2026-10-21"
 
 keywords: install paver cli, authenticate paver cli, paver cli macos, paver cli linux, paver cli windows, paver sso login, paver api key login
 
@@ -32,7 +32,7 @@ curl -fsSL https://paver.cloud.ibm.com/cli/install | bash
 
 After the installation completes, you must [authenticate with your {{site.data.keyword.cloud_notm}} account](/docs/paver?topic=paver-paver-cli-install#paver-authentication) and target a specific account to get started.
 
-## Install {{site.data.keyword.paver}} CLI on  Windows
+## Install {{site.data.keyword.paver}} CLI on Windows
 {: #paver-install-windows}
 
 On Windows, install the {{site.data.keyword.paver_full_notm}} CLI by using PowerShell.

@@ -6,7 +6,7 @@ toc:
     service-name: paver
     audience: service
     category: ai
-    label: IBM Paver in IBM Cloud
+    label: IBM Paver for IBM Cloud
   entries:
   - navgroup:
       id: learn
