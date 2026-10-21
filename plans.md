@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-20"
+lastupdated: "2026-10-21"
 
 keywords: paver plans, paver pricing, paver free plan, paver professional plan, paver credits, paver tiers
 
@@ -15,7 +15,7 @@ subcollection: paver
 # Paver plans in {{site.data.keyword.cloud_notm}}
 {: #paver-plans}
 
-{{site.data.keyword.paver_full}} has a Free and Professional plan. Each plan includes a monthly credit allocation for running operations with {{site.data.keyword.paver}}. Credits are consumed as you use {{site.data.keyword.paver}}, and when credits are exhausted, the behavior depends on your plan. Credits reset each month.
+{{site.data.keyword.paver_full}} has a Free and Professional plan. Each plan includes a monthly credit allocation for running operations with {{site.data.keyword.paver}}. Credits are consumed as you use {{site.data.keyword.paver}}, and when credits are exhausted, the behavior depends on your plan. Credits reset at the start of each month.
 {: shortdesc}
 
 Free
