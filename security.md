@@ -153,14 +153,17 @@ To allow {{site.data.keyword.paver}} to modify resources, switch to **Edit mode*
 
 {{site.data.keyword.paver}} does not start in Safe mode by default. In {{site.data.keyword.cloud_notm}}, {{site.data.keyword.paver}} can automatically switch between Safe mode and Edit mode based on the name of your account.
 
-- If the account name suggests a production environment, {{site.data.keyword.paver}} starts in Safe mode.
-- If the account name suggests a development or test environment, {{site.data.keyword.paver}} starts in Edit mode.
+- If the account name suggests a production environment, such as a name that includes `prod` or `production`, {{site.data.keyword.paver}} starts in Safe mode.
+- If the account name suggests a development or pre-production environment, such as a name that includes `dev`, `test`, or `stage`, {{site.data.keyword.paver}} starts in Edit mode.
 - If the account name doesn't suggest either type of environment, {{site.data.keyword.paver}} doesn't change the mode.
+
+As a best practice, name your accounts appropriately. Include `prod` or `production` in the names of production accounts so that {{site.data.keyword.paver}} starts in Safe mode automatically. Include `dev`, `test`, or `stage` in the names of pre-production accounts so that {{site.data.keyword.paver}} starts in Edit mode by default.
+{: tip}
 
 Because the starting mode depends on the account name, always check the current mode before you start a task, and switch modes if needed. Don't rely on automatic mode selection to protect your resources.
 {: important}
 
-For shared or sensitive environments, a recommended practice is to confirm that {{site.data.keyword.paver}} is in Safe mode and to switch to Edit mode only when changes are intended.
+For shared or sensitive environments, confirm that {{site.data.keyword.paver}} is in Safe mode and switch to Edit mode only when changes are intended.
 {: tip}
 
 ### Administrative best practices

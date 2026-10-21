@@ -61,7 +61,7 @@ You can quickly start a chat session with {{site.data.keyword.paver}} in the con
 
 Using an interactive chat session to understand more about {{site.data.keyword.paver}}, your account, and resources is as easy as asking a question like you would to a team member. Use natural language to describe a challenge you're facing, a plan you want to make, a goal you want to accomplish, or a task you want it to act on for you. Here are some tips for chatting with {{site.data.keyword.paver}}:
 
-{{site.data.keyword.paver}} can automatically start in Safe mode or Edit mode based on the name of your account. Because the starting mode depends on the account name, check the current mode before you start a task, and switch modes if needed. For more information, see [Starting mode in {{site.data.keyword.cloud_notm}}](/docs/paver?topic=paver-paver-security-guide#paver-security-starting-mode).
+{{site.data.keyword.paver}} can automatically start in Safe mode or Edit mode based on the name of your account. Names that include `prod` or `production` start in Safe mode, and names that include `dev`, `test`, or `stage` start in Edit mode. As a best practice, name your accounts accordingly. Because the starting mode depends on the account name, always check the current mode before you start a task, and switch modes if needed.
 {: important}
 
 Ask {{site.data.keyword.paver}} what you want to know directly
