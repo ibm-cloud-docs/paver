@@ -131,9 +131,12 @@ To use an API key and target your account, run the following commands:
 1. Log in with your API key:
 
    ```sh
-   paver login --apikey $CLOUD_API_KEY
+   paver login --apikey CLOUD_API_KEY
    ```
    {: pre}
+
+   When you run `paver login --apikey CLOUD_API_KEY`, {{site.data.keyword.paver}} automatically writes `ibmcloud_api_key` to your keyring with a 24-hour TTL. No extra step is required. The credential is available immediately in your next session.
+   {: tip}
 
 1. Select your target account:
 
@@ -141,6 +144,8 @@ To use an API key and target your account, run the following commands:
    paver account target
    ```
    {: pre}
+
+
 
 ## Updating the Paver CLI
 {: #paver-update-cli}

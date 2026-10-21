@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-20"
+lastupdated: "2026-10-21"
 
 keywords: paver getting started, paver console, chat with paver
 
@@ -20,7 +20,7 @@ completion-time: 10m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="10m"}
 
-Learn how to get started with {{site.data.keyword.paver_full}} by using the {{site.data.keyword.cloud}} console. {{site.data.keyword.paver}} is available in the {{site.data.keyword.cloud_notm}} console, where you can quickly start a chat with {{site.data.keyword.paver}} to manage your account and resources and operate your infrastructure. 
+Learn how to get started with {{site.data.keyword.paver_full}} by using the {{site.data.keyword.cloud}} console. {{site.data.keyword.paver}} is available in the {{site.data.keyword.cloud_notm}} console, where you can quickly start a chat with {{site.data.keyword.paver}} to manage your account and resources and operate your infrastructure.
 {: shortdesc}
 
 To interact with {{site.data.keyword.paver}} from your terminal instead, see [Installing {{site.data.keyword.paver}} CLI](/docs/paver?topic=paver-paver-cli-install).
@@ -34,7 +34,7 @@ To interact with {{site.data.keyword.paver}} from your terminal instead, see [In
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 1. From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **{{site.data.keyword.paver}} AI assistant**.
 
-Note the safety mode switcher where you can change between **Safe** and **Edit** mode. Since you're just getting started, stay in safe mode for now, which keeps {{site.data.keyword.paver}} from modifying your resources until you're ready. You can still ask {{site.data.keyword.paver}} to explore your account and plan changes.
+Note the mode switcher where you can change between **Safe** and **Edit** mode. Since you're just getting started, stay in safe mode for now, which keeps {{site.data.keyword.paver}} from modifying your resources until you're ready. You can still ask {{site.data.keyword.paver}} to explore your account and plan changes.
 {: tip}
 
 ## Take the getting started tour

@@ -56,11 +56,13 @@ You can quickly start a chat session with {{site.data.keyword.paver}} in the con
 1. Click **Send message** to start your chat.
 
 
-
 ## Tips for chatting with {{site.data.keyword.paver}}
 {: #chat-tips}
 
 Using an interactive chat session to understand more about {{site.data.keyword.paver}}, your account, and resources is as easy as asking a question like you would to a team member. Use natural language to describe a challenge you're facing, a plan you want to make, a goal you want to accomplish, or a task you want it to act on for you. Here are some tips for chatting with {{site.data.keyword.paver}}:
+
+{{site.data.keyword.paver}} can automatically start in Safe mode or Edit mode based on the name of your account. Because the starting mode depends on the account name, check the current mode before you start a task, and switch modes if needed. For more information, see [Starting mode in {{site.data.keyword.cloud_notm}}](/docs/paver?topic=paver-paver-security-guide#paver-security-starting-mode).
+{: important}
 
 Ask {{site.data.keyword.paver}} what you want to know directly
 :   Run `paver ask "what can you help me with?"` or inside a chat session ask questions like `can you help me identify resources that are rarely used` to explore what {{site.data.keyword.paver}} can do for your task.
