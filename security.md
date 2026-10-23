@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-21"
+lastupdated: "2026-10-23"
 
 keywords: paver security, paver security guide, paverguard, safety mode, safe mode, edit mode, {{site.data.keyword.at_short}}, secrets management, data retention
 
@@ -15,7 +15,7 @@ subcollection: paver
 # {{site.data.keyword.paver_full_notm}} security guide for {{site.data.keyword.cloud_notm}}
 {: #paver-security-guide}
 
-{{site.data.keyword.paver_full}} is a cloud-hosted AI assistant service that is delivered through the {{site.data.keyword.cloud}} catalog. Because {{site.data.keyword.paver}} is a managed service, {{site.data.keyword.IBM}} is responsible for the underlying infrastructure security, including network hardening, OS hardening, patch management, physical security, and service-level encryption.
+{{site.data.keyword.paver_full}} is a cloud-hosted AI assistant service that is delivered through the {{site.data.keyword.cloud}} catalog. Because {{site.data.keyword.paver}} is a managed service, {{site.data.keyword.IBM}} is responsible for the underlying infrastructure security, including network hardening, operating system hardening, patch management, physical security, and service-level encryption.
 {: shortdesc}
 
 This document focuses on what customers need to know to configure and use {{site.data.keyword.paver}} securely within their own environments.
@@ -26,7 +26,7 @@ This document focuses on what customers need to know to configure and use {{site
 Before provisioning {{site.data.keyword.paver}}, ensure that your {{site.data.keyword.cloud_notm}} account has the following:
 
 - IBMid-based authentication is configured for all users who will use {{site.data.keyword.paver}}
-- {{site.data.keyword.cloud_notm}} IAM policies reviewed and scoped to least privilege. {{site.data.keyword.paver}} acts with the permissions of the authenticated user.
+- {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) policies that are reviewed and scoped to least privilege. {{site.data.keyword.paver}} acts with the permissions of the authenticated user.
 - Multifactor authentication (MFA) is enforced at the {{site.data.keyword.cloud_notm}} account level. For more information, see [Authentication and Authorization](#paver-security-auth).
 
 ### Provisioning {{site.data.keyword.paver}}
@@ -34,7 +34,7 @@ Before provisioning {{site.data.keyword.paver}}, ensure that your {{site.data.ke
 
 {{site.data.keyword.paver}} is not installed software. It is provisioned as a service instance through the {{site.data.keyword.cloud_notm}} catalog, like any other {{site.data.keyword.cloud_notm}} service. There are no server packages for customers to install or patch on the service side. The following are best practices:
 
-- Provision {{site.data.keyword.paver}} instances only in regions that satisfy your data residency requirements. {{site.data.keyword.paver}} is currently available in `us-south`, `eu-de`, and `jp-tok`. All user data is stored in the region where the instance was provisioned. 
+- Provision {{site.data.keyword.paver}} instances only in regions that satisfy your data residency requirements. {{site.data.keyword.paver}} is currently available in `us-south`, `eu-de`, and `jp-tok`. All user data is stored in the region where the instance was provisioned.
 - Apply {{site.data.keyword.cloud_notm}} IAM access controls to restrict who can provision, manage, or delete {{site.data.keyword.paver}} service instances.
 - Use {{site.data.keyword.cloud_notm}} resource groups and access policies to separate resources by team or environment, for example dev versus production. Because {{site.data.keyword.paver}} operates with the permissions of the authenticated user, environment separation is achieved through standard IAM role scoping, so users who can't perform an action directly can't perform it through {{site.data.keyword.paver}} either.
 
@@ -96,21 +96,21 @@ All data in transit between the {{site.data.keyword.paver}} client (CLI or web U
 ### Secrets management
 {: #paver-security-secrets-management}
 
-{{site.data.keyword.paver}} stores user-supplied credentials, such as bearer tokens, API keys, and SSH keys, in an encrypted keyring scoped to the authenticated user. Secrets stored in the keyring are used by {{site.data.keyword.paver}} to authenticate to target systems on the user's behalf and are not shared across users.
+{{site.data.keyword.paver}} stores user-supplied credentials, such as bearer tokens, API keys, and SSH keys, in an encrypted keyring scoped to the authenticated user. Secrets that are stored in the keyring are used by {{site.data.keyword.paver}} to authenticate to target systems on the user's behalf and are not shared across users.
 
-For {{site.data.keyword.cloud_notm}}, the only credential stored in the keyring by default is the user's bearer token, which is managed automatically by {{site.data.keyword.paver}} and does not need to be rotated manually. Additional secrets, such as API keys for other services, can be added to the keyring as needed by specific workflows.
+For {{site.data.keyword.cloud_notm}}, the only credential that is stored in the keyring by default is the user's bearer token, which is managed automatically by {{site.data.keyword.paver}} and does not need to be rotated manually. Additional secrets, such as API keys for other services, can be added to the keyring as needed by specific workflows.
 
 Consider the following best practices:
 
-- Store only the minimum set of credentials required for your workflows.
+- Store only the minimum set of credentials that are required for your workflows.
 - Use {{site.data.keyword.cloud_notm}} API keys with the minimum IAM permissions required.
-- Rotate credentials stored in the {{site.data.keyword.paver}} keyring on the same schedule as your other credentials.
+- Rotate credentials that are stored in the {{site.data.keyword.paver}} keyring on the same schedule as your other credentials.
 - Remove credentials from the keyring when they are no longer needed (`paver keyring remove`).
 
 ## Safe use and risk controls
 {: #paver-security-safe-use-risk-controls}
 
-### Paver Guard — Risk Assessment
+### Paver Guard: Risk assessment
 {: #paver-security-paverguard}
 
 Every action {{site.data.keyword.paver}} proposes to take against a resource on behalf of the user is evaluated by {{site.data.keyword.paver}} Guard, a secondary AI agent that classifies the risk of the action as low, medium, or high before execution.
@@ -119,12 +119,12 @@ Risk is assessed based on both the nature of the operation and the context of th
 
 | Risk level | Typical operations |
 |---|---|
-| **Low** | Read operations — listing, describing, or querying resources |
-| **Medium** | Modifications — creating, updating, or reconfiguring resources |
-| **High** | Operations that might cause data loss or service interruption — deleting resources, stopping services, changing access policies |
+| **Low** | Read operations such as listing, describing, or querying resources |
+| **Medium** | Modifications such as creating, updating, or reconfiguring resources |
+| **High** | Operations that might cause data loss or service interruption such as deleting resources, stopping services, changing access policies |
 {: caption="Paver Guard risk level classifications" caption-side="bottom"}
 
-Context matters significantly. {{site.data.keyword.paver}} Guard considers the full conversation context when assigning risk — for example, deleting a blank test VM that was just created in the same conversation might be rated medium risk, while deleting a production VM that hosts live applications would be rated high risk.
+Context matters significantly. {{site.data.keyword.paver}} Guard considers the full conversation context when assigning risk. For example, deleting a blank test VM that was just created in the same conversation can be rated medium risk, while deleting a production VM that hosts live applications would be rated high risk.
 
 Users can configure a risk threshold policy:
 
@@ -247,7 +247,7 @@ Organizations with compliance requirements for conversation retention should ins
 {{site.data.keyword.paver}} doesn't currently produce its own structured audit log stream. There is no {{site.data.keyword.paver}}-specific log of internal service events, such as when a conversation was created, when a sandbox was provisioned, or when {{site.data.keyword.paver}} Guard evaluated an action, available for export or integration into a SIEM.
 
 For audit purposes, the two available sources are:
-- {{site.data.keyword.cloud_notm}} {{site.data.keyword.at_short}} that records all {{site.data.keyword.cloud_notm}} API actions performed under the user's identity
+- {{site.data.keyword.cloud_notm}} {{site.data.keyword.at_short}} that records all {{site.data.keyword.cloud_notm}} API actions that are performed under the user's identity
 - {{site.data.keyword.paver}} conversation history, which records everything the user asked, every action {{site.data.keyword.paver}} took, and all outcomes
 
 Together these provide a complete picture of what a user did through {{site.data.keyword.paver}} and what happened in {{site.data.keyword.cloud_notm}} as a result.

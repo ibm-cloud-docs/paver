@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-21"
+lastupdated: "2026-10-23"
 
 keywords: install paver cli, authenticate paver cli, paver cli macos, paver cli linux, paver cli windows, paver sso login, paver api key login
 
@@ -15,10 +15,8 @@ subcollection: paver
 # Installing {{site.data.keyword.paver_full_notm}} CLI
 {: #paver-cli-install}
 
-Install the {{site.data.keyword.paver_full}} CLI and authenticate with your {{site.data.keyword.cloud_notm}} account to start working with {{site.data.keyword.paver}} directly from the terminal.
+Install the {{site.data.keyword.paver_full_notm}} CLI on macOS, Linux, or Windows, and authenticate with your {{site.data.keyword.cloud_notm}} account to get started.
 {: shortdesc}
-
-You can install {{site.data.keyword.paver_full_notm}} CLI on macOS, Linux, or Windows.
 
 ## Install {{site.data.keyword.paver}} CLI on macOS and Linux
 {: #paver-install-mac-linux}
@@ -35,7 +33,7 @@ After the installation completes, you must [authenticate with your {{site.data.k
 ## Install {{site.data.keyword.paver}} CLI on Windows
 {: #paver-install-windows}
 
-On Windows, install the {{site.data.keyword.paver_full_notm}} CLI by using PowerShell.
+On Windows, install the {{site.data.keyword.paver}} CLI by using PowerShell.
 
 ### Before you begin
 {: #paver-windows-prereqs}
@@ -49,11 +47,7 @@ Make sure that you have the following prerequisites:
 ### Set up your PowerShell working directory
 {: #paver-windows-workdir}
 
-1. Start PowerShell with **Run as administrator**.
-
-   When you start PowerShell as an administrator, the default working directory is `C:\Windows\system32`.
-   {: note}
-
+1. Start PowerShell with **Run as administrator**. When you start PowerShell as an administrator, the default working directory is `C:\Windows\system32`.
 1. Create a dedicated working directory, such as `C:\Paver`, and change to that directory:
 
    ```powershell
@@ -66,10 +60,10 @@ Make sure that you have the following prerequisites:
    ```
    {: pre}
 
-Do not run setup commands or store files in `C:\Windows\system32`.
-{: important}
+   Do not run setup commands or store files in `C:\Windows\system32`.
+   {: important}
 
-### Install the Paver CLI on Windows
+### Install the {{site.data.keyword.paver}} CLI on Windows
 {: #paver-install-windows-cli}
 
 1. In the PowerShell window that you started as an administrator, make sure that your current working directory is `C:\Paver`.
@@ -106,10 +100,10 @@ Do not run setup commands or store files in `C:\Windows\system32`.
 
 After the installation completes, you must [authenticate with your {{site.data.keyword.cloud_notm}} account](/docs/paver?topic=paver-paver-cli-install#paver-authentication) and target a specific account to get started.
 
-## Authenticating with Paver CLI
+## Authenticating to {{site.data.keyword.paver}} CLI
 {: #paver-authentication}
 
-You can authenticate with single sign-on (SSO) or an API key.
+You can authenticate with single sign-on (SSO) or an API key. You can also use `paver login` and a browser opens and prompts you to select the account that you want to target.
 
 ### Log in with SSO
 {: #paver-sso-login}
@@ -117,11 +111,9 @@ You can authenticate with single sign-on (SSO) or an API key.
 To use SSO, run the following command:
 
 ```sh
-paver login
+paver login --sso
 ```
 {: pre}
-
-A browser opens and prompts you to select the account that you want to target.
 
 ### Log in with an API key
 {: #paver-api-key-login}
@@ -138,15 +130,6 @@ To use an API key and target your account, run the following commands:
    When you run `paver login --apikey CLOUD_API_KEY`, {{site.data.keyword.paver}} automatically writes `ibmcloud_api_key` to your keyring with a 24-hour TTL. No extra step is required. The credential is available immediately in your next session.
    {: tip}
 
-1. Select your target account:
-
-   ```sh
-   paver account target
-   ```
-   {: pre}
-
-
-
 ## Updating the Paver CLI
 {: #paver-update-cli}
 
@@ -157,12 +140,10 @@ paver update
 ```
 {: pre}
 
-
-
 ## Next steps
 {: #paver-cli-next-steps}
 
-After you authenticate, start an interactive chat session with {{site.data.keyword.paver}}:
+After you log in, start an interactive chat session with {{site.data.keyword.paver}} in your terminal:
 
 ```sh
 paver chat

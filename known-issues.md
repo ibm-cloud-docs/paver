@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-21"
+lastupdated: "2026-10-23"
 
 keywords: paver known issues, paver limitations, context-based restrictions, IBM Cloud API 403, IBM_CLOUD_REQ_CTX, context token, trusted profiles, human oversight, AI operations, paver guard
 
@@ -15,7 +15,7 @@ subcollection: paver
 # Known issues and limitations for {{site.data.keyword.paver_full_notm}} in {{site.data.keyword.cloud_notm}}
 {: #paver-known-issues}
 
-Review known issues and limitations about using {{site.data.keyword.paver_full}} for {{site.data.keyword.cloud}} that might affect your workflows.
+Review known issues and limitations about using {{site.data.keyword.paver_full}} for {{site.data.keyword.cloud}} that can affect your workflows.
 {: shortdesc}
 
 ## Direct API calls can fail when context-based restrictions are enabled

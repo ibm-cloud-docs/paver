@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-21"
+lastupdated: "2026-10-23"
 
 keywords: paver responsibilities, customer responsibilities with paver
 
@@ -54,7 +54,7 @@ Identity and access management includes tasks such as authentication, authorizat
 
 |  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |--|--|--|
-| Access policies and permissions | Enforce {{site.data.keyword.cloud_notm}} IAM policies. Ensure that {{site.data.keyword.paver}} operates only with the permissions of the authenticated user. | Follow IAM least privilege principles when assigning access policies. Ensure that users have only the permissions that are required for their tasks. |
+| Access policies and permissions | Enforce {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) policies. Ensure that {{site.data.keyword.paver}} operates only with the permissions of the authenticated user. | Follow IAM least privilege principles when assigning access policies. Ensure that users have only the permissions that are required for their tasks. |
 | User actions and data access | Restrict operations to the permissions of the authenticated user. | Take responsibility for all actions taken, data that is accessed, and changes made through {{site.data.keyword.paver}} under your credentials. |
 | Risk evaluation and safeguards | Provide risk warnings for proposed actions and provide safety mode, where Safe mode prevents {{site.data.keyword.paver}} from modifying resources. | Review {{site.data.keyword.paver}}'s warnings about risky actions, make appropriate judgments before approving changes, and use Safe mode in [Safety mode](/docs/paver?topic=paver-paver-security-guide#paver-security-safe-edit-mode) when working with sensitive resources or accounts. |
 {: row-headers}

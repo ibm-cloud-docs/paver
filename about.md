@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-20"
+lastupdated: "2026-10-23"
 
 keywords: paver overview, what is paver, agentic ai, infrastructure operations, paver capabilities
 
@@ -15,17 +15,17 @@ subcollection: paver
 # About {{site.data.keyword.paver_full_notm}} for {{site.data.keyword.cloud_notm}}
 {: #paver-about}
 
-Learn about {{site.data.keyword.paver_full}}, its capabilities, and how it works with your account. {{site.data.keyword.paver}} is a built-in agentic AI operator that helps you deploy, operate, and troubleshoot your cloud account and resources through natural language.
+Learn about {{site.data.keyword.paver_full}}, its capabilities, and how it works with your account and resources. {{site.data.keyword.paver}} is a built-in agentic AI operator that helps you deploy, operate, and troubleshoot your cloud account and resources through natural language.
 {: shortdesc}
 
-{{site.data.keyword.paver}} is available directly in the {{site.data.keyword.cloud_notm}} console and through the {{site.data.keyword.paver_full_notm}} CLI, so you can work with your accounts, services, and infrastructure without switching between tools. Rather than generating code for you to run elsewhere, {{site.data.keyword.paver}} acts on your behalf within {{site.data.keyword.cloud_notm}}. It runs commands and scripts in a secure sandbox, reads your account context, reasons about what needs to happen, explains its plan, and actions approved changes against your live environment.
+{{site.data.keyword.paver}} is available directly in the {{site.data.keyword.cloud}} console and through the {{site.data.keyword.paver_full_notm}} CLI, so you can work with your accounts, services, and infrastructure without switching between tools. Rather than generating code for you to run elsewhere, {{site.data.keyword.paver}} acts on your behalf within {{site.data.keyword.cloud_notm}}. It runs commands and scripts in a secure sandbox workspace, reads your account context, reasons about what needs to happen, explains its plan, and actions approved changes against your live environment.
 
 {{site.data.keyword.paver}} is built for environments where reliability, governance, and accountability matter. It operates within your existing permissions and security policies and can't exceed your authorized access.
 
 Your prompts, context, and operational data are never used to train foundation models.
 {: note}
 
-## What you can do with {{site.data.keyword.paver}} in {{site.data.keyword.cloud_notm}}
+## What you can do within {{site.data.keyword.paver}} in {{site.data.keyword.cloud_notm}}
 {: #paver-capabilities}
 
 {{site.data.keyword.paver}} can help you accomplish the following operational goals in your {{site.data.keyword.cloud_notm}} account:
@@ -52,7 +52,7 @@ When you work across multiple {{site.data.keyword.cloud_notm}} accounts, regions
 ### Operating with safeguards
 {: #paver-safety}
 
-When you're managing enterprise workloads in {{site.data.keyword.cloud_notm}}, staying in control of what {{site.data.keyword.paver}} does and when is essential. You can set {{site.data.keyword.paver}}'s safety mode to Safe mode, where {{site.data.keyword.paver}} can't modify your resources. In Safe mode, {{site.data.keyword.paver}} can still read your resources, diagnose problems, and read and write files in its sandbox, so you can safely explore your account and plan changes, such as creating scripts or Terraform to implement them. {{site.data.keyword.paver}} can't run those scripts or apply those plans until you switch to Edit mode. When you're ready to act, switching to Edit mode means that {{site.data.keyword.paver}} asks for your explicit approval before each operation runs, and you can modify the exact command before it executes. 
+When you're managing enterprise workloads in {{site.data.keyword.cloud_notm}}, staying in control of what {{site.data.keyword.paver}} does and when is essential. You can set {{site.data.keyword.paver}} to work in Safe mode, where {{site.data.keyword.paver}} can't modify your resources. In Safe mode, {{site.data.keyword.paver}} can still read your resources, diagnose problems, and read and write files in its sandbox, so you can safely explore your account and plan changes, such as creating scripts or Terraform to implement them. {{site.data.keyword.paver}} can't run those scripts or apply those plans until you switch to Edit mode. When you're ready to act, switching to Edit mode means that {{site.data.keyword.paver}} asks for your explicit approval before each operation runs, and you can modify the exact command before it executes.
 
 {{site.data.keyword.paver}} Guard adds a risk policy on top of this so you can set thresholds that auto-approve routine operations while holding higher-risk changes for your review, giving you fine-grained control that scales with how comfortable you are with the task at hand. For more information, see [Managing safeguards and controls](https://paver.ibm.com/docs/core-concepts/managing-risk-and-control){: external}.
 

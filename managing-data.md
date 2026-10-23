@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-21"
+lastupdated: "2026-10-23"
 
 keywords: manage paver data, paver data retention, export paver data, delete paver data, paver data residency, paver responsibilities
 
@@ -108,11 +108,11 @@ The only exception is AI inferencing, which is currently performed in the `us-ea
 ### Viewing or updating the region
 {: #region-details}
 
-You can view the region where your {{site.data.keyword.paver}} instance is storing data in the console:
+In the console, you can view the region where your {{site.data.keyword.paver}} instance is storing data:
 
 1. From the console header menu, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Paver AI assistant**.
 1. Click the **Settings** icon![Settings](../icons/settings.svg "Settings icon"), then go to **All settings**.
 1. Click **Region** to view the current region.
 
-If you need to update the region, select a new region from **Current region**, accept the disclaimer that alerts you that your data will not be transferred automatically. Then, click **Change region**.
+If you need to update the region, select a new region from **Current region**, accept the disclaimer that alerts you that your data will not be transferred automatically. Then, click **Change region** for the update to take effect.
 {: tip}
