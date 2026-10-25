@@ -2,10 +2,9 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-25"
 
-keywords: paver known issues, paver limitations, context-based restrictions, IBM Cloud API 403, IBM_CLOUD_REQ_CTX, context token, trusted profiles, human oversight, AI operations, paver guard
-
+keywords: paver known issues, paver limitations, IBM Cloud API 403, IBM_CLOUD_REQ_CTX, context token
 subcollection: paver
 
 ---
@@ -30,7 +29,7 @@ For steps to resolve this issue, see [Why do my direct API calls return a 403 er
 ## Trusted profiles are not supported for {{site.data.keyword.paver}} sessions
 {: #known-issue-trusted-profiles}
 
-{{site.data.keyword.paver}} does not support IBM Cloud Identity and Access Management (IAM) trusted profiles as the active identity for a session. If you are logged in to the {{site.data.keyword.cloud_notm}} console with a trusted profile selected as your active account identity, {{site.data.keyword.paver}} can't use that trusted profile to authenticate its actions.
+{{site.data.keyword.paver}} does not support {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) trusted profiles as the active identity for a session. If you are logged in to the {{site.data.keyword.cloud_notm}} console with a trusted profile selected as your active account identity, {{site.data.keyword.paver}} can't use that trusted profile to authenticate its actions.
 
 To use {{site.data.keyword.paver}}, log in to the console with your standard user identity rather than a trusted profile. Trusted profile support is planned for a future release.
 

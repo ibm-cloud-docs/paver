@@ -2,9 +2,9 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-25"
 
-keywords: paver security, paver security guide, paverguard, safety mode, safe mode, edit mode, {{site.data.keyword.at_short}}, secrets management, data retention
+keywords: paver security, paver security guide, paverguard, safety mode, safe mode, edit mode
 
 subcollection: paver
 
@@ -59,6 +59,8 @@ The {{site.data.keyword.paver}} CLI (`paver`) is downloaded directly from your {
 ## Authentication and authorization
 {: #paver-security-auth}
 
+{{site.data.keyword.paver}} uses your {{site.data.keyword.cloud_notm}} IAM to control who can sign in and what actions {{site.data.keyword.paver}} can take. Learn how login works, how {{site.data.keyword.paver}} acts with the permissions of the authenticated user, and how user access is managed.
+
 ### Identity and login
 {: #paver-security-identity-login}
 
@@ -110,6 +112,8 @@ Consider the following best practices:
 ## Safe use and risk controls
 {: #paver-security-safe-use-risk-controls}
 
+{{site.data.keyword.paver}} includes controls that help you limit the impact of actions that it takes on your cloud resources. Learn how {{site.data.keyword.paver}} Guard assesses the risk of each action, how Safe mode and Edit mode control whether resources can be modified, and which administrative practices help you use {{site.data.keyword.paver}} safely.
+
 ### Paver Guard: Risk assessment
 {: #paver-security-paverguard}
 
@@ -118,7 +122,7 @@ Every action {{site.data.keyword.paver}} proposes to take against a resource on 
 Risk is assessed based on both the nature of the operation and the context of the conversation:
 
 | Risk level | Typical operations |
-|---|---|
+| --- | --- |
 | **Low** | Read operations such as listing, describing, or querying resources |
 | **Medium** | Modifications such as creating, updating, or reconfiguring resources |
 | **High** | Operations that might cause data loss or service interruption such as deleting resources, stopping services, changing access policies |

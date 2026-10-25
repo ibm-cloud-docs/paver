@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-25"
 
 keywords: install paver cli, authenticate paver cli, paver cli macos, paver cli linux, paver cli windows, paver sso login, paver api key login
 
@@ -12,7 +12,7 @@ subcollection: paver
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Installing {{site.data.keyword.paver_full_notm}} CLI
+# Installing the {{site.data.keyword.paver_full_notm}} CLI
 {: #paver-cli-install}
 
 Install the {{site.data.keyword.paver_full_notm}} CLI on macOS, Linux, or Windows, and authenticate with your {{site.data.keyword.cloud_notm}} account to get started.
@@ -150,7 +150,7 @@ paver chat
 ```
 {: pre}
 
-In the chat, you can ask {{site.data.keyword.paver}} about itself, explore available commands, or start working with your {{site.data.keyword.cloud_notm}} account and resources. For more information, see [Tips for chatting with {{site.data.keyword.paver}}](/docs/paver?topic=paver-paver-using#chat-tips).
+In the chat, you can ask {{site.data.keyword.paver}} about itself, explore available commands, or start working with your {{site.data.keyword.cloud_notm}} account and resources. For more information, see [Tips for chatting with {{site.data.keyword.paver}}](/docs/paver?topic=paver-paver-using#chat-tips). For a complete list of CLI commands and options, see the [{{site.data.keyword.paver}} CLI command reference](https://paver.ibm.com/docs/cli-reference){: external}.
 
 After you start an interactive chat, you can change your theme with the `/theme` command, Use `/theme list` to see the options, and then `/theme update <name>` to change it
 {: tip}

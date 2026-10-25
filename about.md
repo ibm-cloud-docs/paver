@@ -2,9 +2,9 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-25"
 
-keywords: paver overview, what is paver, agentic ai, infrastructure operations, paver capabilities
+keywords: paver overview, what is paver, infrastructure operations, paver capabilities
 
 subcollection: paver
 
@@ -47,7 +47,7 @@ When you work with {{site.data.keyword.paver}}, several features and capabilitie
 ### Your account context, always ready
 {: #paver-memory}
 
-When you work across multiple {{site.data.keyword.cloud_notm}} accounts, regions, and resource groups, repeating that context in every session adds friction. {{site.data.keyword.paver}} builds a persistent picture of how you work, such as your preferred regions, the projects you return to, and the resources you manage most, and carries that context forward automatically. If your setup changes or {{site.data.keyword.paver}} has something wrong, correct it by telling {{site.data.keyword.paver}} in chat and it updates immediately. For more information about {{site.data.keyword.paver}}'s memory, see [Building persistent context](https://paver.ibm.com/docs/core-concepts/memory){: external}.
+When you work across multiple {{site.data.keyword.cloud_notm}} accounts, regions, and resource groups, repeating that context in every session adds friction. {{site.data.keyword.paver}} builds a persistent picture of how you work, such as your preferred regions, the projects you return to, and the resources you manage most, and carries that context forward automatically. If your setup changes or {{site.data.keyword.paver}} has something wrong, correct it by telling {{site.data.keyword.paver}} in chat and it updates immediately. For more information about {{site.data.keyword.paver}}'s memory, see [Building persistent memory and context](https://paver.ibm.com/docs/core-concepts/memory){: external}.
 
 ### Operating with safeguards
 {: #paver-safety}
@@ -64,7 +64,7 @@ Managing cloud infrastructure means working with many files, whether it's Terraf
 ### Keep your credentials out of the chat
 {: #paver-keyring}
 
-Connecting {{site.data.keyword.paver}} to your {{site.data.keyword.cloud_notm}} services often requires working with API keys and service credentials. With the keyring, you can store those secrets once, export them, and then {{site.data.keyword.paver}} injects them as environment variables at the start of each session so they're available when needed, without you ever pasting them into the chat. {{site.data.keyword.paver}} encrypts stored values and doesn't display them after storage. When exported, any command in the conversation can read the value, so export only what you need. Entries expire on a schedule that you control, so credentials don't persist beyond their useful life. For more information, see [Storing your secrets](https://paver.ibm.com/docs/core-concepts/files){: external}.
+Connecting {{site.data.keyword.paver}} to your {{site.data.keyword.cloud_notm}} services often requires working with API keys and service credentials. With the keyring, you can store those secrets once, export them, and then {{site.data.keyword.paver}} injects them as environment variables at the start of each session so they're available when needed, without you ever pasting them into the chat. {{site.data.keyword.paver}} encrypts stored values and doesn't display them after storage. When exported, any command in the conversation can read the value, so export only what you need. Entries expire on a schedule that you control, so credentials don't persist beyond their useful life. For more information, see [Storing your secrets in the keyring](https://paver.ibm.com/docs/core-concepts/files){: external}.
 
 ### Run {{site.data.keyword.cloud_notm}} commands in the same environment {{site.data.keyword.paver}} uses
 {: #paver-shell}

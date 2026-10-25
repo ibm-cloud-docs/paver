@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-25"
 
 keywords: paver plans, paver pricing, paver free plan, paver professional plan, paver credits, paver tiers
 
@@ -29,13 +29,13 @@ Credits reset at the start of each month.
 
 For full details on pricing and included features per plan, go to the ![Help icon](../icons/help.svg "Help") **Help** menu > **Paver AI assistant**, and then click ![Settings](../icons/settings.svg "Settings icon") **Settings** > **All settings** > **Billing**.
 
-## Switching plans for {{site.data.keyword.paver}}
+## Switching plans for {{site.data.keyword.paver}} in {{site.data.keyword.cloud_notm}}
 {: #switching-plans}
 
 You can switch from the Free plan to the Professional plan at any time. If you are reaching your limit while you are using the Free plan, you are alerted in the console that you're approaching your limit, and you can choose to upgrade then.
 
 1. From the console menu header. menu, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Paver AI assistant**.
-1. Click the **Settings** icon ![Settings](../icons/settings.svg "Settings icon"), then click **All settings**.
+1. Click the **Settings** icon ![Settings](../icons/settings.svg "Settings icon"), and then click **All settings**.
 1. Go to **Billing**.
 1. Click **Update** to review the available plans and select the option that works best for you.
 1. Agree to the terms and conditions, and click **Confirm**.

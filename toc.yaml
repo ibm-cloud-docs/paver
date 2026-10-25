@@ -27,10 +27,10 @@ toc:
           label: Managing safeguards and controls
           href: https://paver.ibm.com/docs/core-concepts/managing-risk-and-control
       - link:
-          label: Storing your secrets
+          label: Storing your secrets in the keyring
           href: https://paver.ibm.com/docs/core-concepts/keyring
       - link:
-          label: Building persistent context
+          label: Building persistent memory and context
           href: https://paver.ibm.com/docs/core-concepts/memory
       - link:
           label: Sharing files
@@ -47,10 +47,10 @@ toc:
       id: reference
       topics:
       - link:
-          label: CLI reference
+          label: CLI command reference
           href: https://paver.ibm.com/docs/cli-reference
       - link:
-          label: Chat commands
+          label: Chat commands reference
           href: https://paver.ibm.com/docs/tui-reference
       - topic: security.md
         navtitle: Security guide

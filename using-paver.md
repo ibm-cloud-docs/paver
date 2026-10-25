@@ -2,9 +2,9 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-25"
 
-keywords: using paver, paver cli, paver chat, paver ask, update paver cli
+keywords: using paver, paver cli, paver chat, paver ask
 
 subcollection: paver
 
