@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026, 2026
-lastupdated: "2026-10-21"
+lastupdated: "2026-10-25"
 
 keywords: paver help, paver support, paver feedback, troubleshoot paver, paver issue
 
@@ -68,26 +68,26 @@ The type of case that you can open depends on your [support plan](/docs/support?
 ## Submitting feedback in {{site.data.keyword.paver}}
 {: #paver-feedback}
 
-Your feedback is valuable in helping improve the {{site.data.keyword.paver}} experience. Submit feedback directly from an interactive chat session:
+Your feedback is valuable in helping improve the {{site.data.keyword.paver}} experience. Submit feedback directly from an interactive chat session in the console:
 
 ```sh
-/feedback "Your feedback message here"
+/feedback create "Your feedback message here"
 ```
 {: pre}
 
 The following examples show feedback submissions:
 
 ```sh
-/feedback "This was great! I successfully automated a complex deployment workflow"
+/feedback create "This was great! I successfully automated a complex deployment workflow"
 ```
 {: pre}
 
 ```sh
-/feedback "Encountered difficulty with resource provisioning commands"
+/feedback create "Encountered difficulty with resource provisioning commands"
 ```
 {: pre}
 
-You can also use the `feedback create <your-feedback>` command in the CLI.
+You can also use the `paver feedback create <your-feedback>` command in the CLI or `/feedback <your-feedback>` in an interactive chat in your terminal.
 
 When you submit feedback, relevant logs and diagnostic data are automatically sent for analysis.
 {: note}
