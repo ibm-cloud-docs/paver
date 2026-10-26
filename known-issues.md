@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-25"
+lastupdated: "2026-10-26"
 
 keywords: paver known issues, paver limitations, IBM Cloud API 403, IBM_CLOUD_REQ_CTX, context token
 subcollection: paver
@@ -20,7 +20,7 @@ Review known issues and limitations about using {{site.data.keyword.paver_full}}
 ## Direct API calls can fail when context-based restrictions are enabled
 {: #known-issue-cbr}
 
-If your {{site.data.keyword.cloud_notm}} account uses context-based restrictions, direct API calls that you make inside the {{site.data.keyword.paver}} sandbox might return a `403` error.
+If your {{site.data.keyword.cloud_notm}} account uses context-based restrictions, direct API calls that you make inside the {{site.data.keyword.paver}} sandbox return a `403` error.
 
 {{site.data.keyword.paver}} handles context-based restrictions by creating a context token that captures your client IP address and injecting it into the sandbox as the `IBM_CLOUD_REQ_CTX` environment variable. The {{site.data.keyword.paver}} CLI and built-in scripts automatically include this token when calling {{site.data.keyword.cloud_notm}} APIs. However, this token is not automatically included when you write a prompt that asks {{site.data.keyword.paver}} to call an {{site.data.keyword.cloud_notm}} API directly with `curl` or a custom script. Without the token, context-based restrictions rules can't verify your client context, and the API call fails with a `403 Forbidden` error.
 

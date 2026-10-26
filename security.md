@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-25"
+lastupdated: "2026-10-26"
 
 keywords: paver security, paver security guide, paverguard, safety mode, safe mode, edit mode
 
@@ -15,10 +15,8 @@ subcollection: paver
 # {{site.data.keyword.paver_full_notm}} security guide for {{site.data.keyword.cloud_notm}}
 {: #paver-security-guide}
 
-{{site.data.keyword.paver_full}} is a cloud-hosted AI assistant service that is delivered through the {{site.data.keyword.cloud}} catalog. Because {{site.data.keyword.paver}} is a managed service, {{site.data.keyword.IBM}} is responsible for the underlying infrastructure security, including network hardening, operating system hardening, patch management, physical security, and service-level encryption.
+Learn about what you need to know to configure and use {{site.data.keyword.paver}} securely within your own environments. {{site.data.keyword.paver_full}} is a cloud-hosted AI assistant service that is delivered through the {{site.data.keyword.cloud}} catalog. Because {{site.data.keyword.paver}} is a managed service, {{site.data.keyword.IBM}} is responsible for the underlying infrastructure security, including network hardening, operating system hardening, patch management, physical security, and service-level encryption.
 {: shortdesc}
-
-This document focuses on what customers need to know to configure and use {{site.data.keyword.paver}} securely within their own environments.
 
 ## Installation and secure configuration
 {: #paver-security-installation-config}
