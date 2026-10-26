@@ -1,0 +1,66 @@
+toc:
+  properties:
+    subcollection: paver
+    path: paver
+    href: /docs/paver
+    service-name: paver
+    audience: service
+    category: ai
+    label: IBM Paver for IBM Cloud
+  entries:
+  - navgroup:
+      id: learn
+      topics:
+      - topic: getting-started.md
+        navtitle: Getting started
+      - topic: about.md
+        navtitle: About IBM Paver
+      - topic: plans.md
+        navtitle: Paver plans
+  - navgroup:
+      id: howto
+      topics:
+      - topic: cli-install.md
+      - topic: using-paver.md
+        navtitle: Starting an interactive chat
+      - link:
+          label: Managing safeguards and controls
+          href: https://paver.ibm.com/docs/core-concepts/managing-risk-and-control
+      - link:
+          label: Storing your secrets in the keyring
+          href: https://paver.ibm.com/docs/core-concepts/keyring
+      - link:
+          label: Building persistent memory and context
+          href: https://paver.ibm.com/docs/core-concepts/memory
+      - link:
+          label: Sharing files
+          href: https://paver.ibm.com/docs/core-concepts/files
+      - link:
+          label: Using the interactive shell
+          href: https://paver.ibm.com/docs/core-concepts/shell
+      - link:
+          label: Extending Paver with skills
+          href: https://paver.ibm.com/docs/core-concepts/skills
+      - topic: managing-data.md
+        navtitle: Managing your data
+  - navgroup:
+      id: reference
+      topics:
+      - link:
+          label: CLI command reference
+          href: https://paver.ibm.com/docs/cli-reference
+      - link:
+          label: Chat commands reference
+          href: https://paver.ibm.com/docs/tui-reference
+      - topic: security.md
+        navtitle: Security guide
+      - topic: responsibilities.md
+        navtitle: Understanding your responsibilities
+      - topic: known-issues.md
+        navtitle: Known issues and limitations
+  - navgroup:
+      id: help
+      topics:
+      - topic: troubleshoot.md
+      - topic: get-help.md
+        navtitle: Getting help and support
