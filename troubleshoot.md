@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-26"
 
 keywords: paver 403 error, context-based restrictions API failure, IBM_CLOUD_REQ_CTX, IBM-Cloud-Req-Ctx, curl 403 forbidden paver
 
@@ -28,7 +28,7 @@ You observe one or both of the following symptoms:
 - A `curl` command to an {{site.data.keyword.cloud_notm}} API returns `403 Forbidden`.
 - A custom script that calls {{site.data.keyword.cloud_notm}} APIs fails with an access-denied error.
 
-Your {{site.data.keyword.cloud_notm}} account uses context-based restrictions. {{site.data.keyword.paver}} creates a context token that captures your client IP address and injects it into the sandbox as the `IBM_CLOUD_REQ_CTX` environment variable. The {{site.data.keyword.paver}} CLI and built-in scripts automatically include this token when calling {{site.data.keyword.cloud_notm}} APIs. However, when you write a prompt that asks {{site.data.keyword.paver}} to call an {{site.data.keyword.cloud_notm}} API directly with `curl` or a custom script, {{site.data.keyword.paver}} might not include the context token in those requests. Without the token, context-based restrictions rules can't verify your client context, and the API call fails.
+Your {{site.data.keyword.cloud_notm}} account uses context-based restrictions. {{site.data.keyword.paver}} creates a context token that captures your client IP address and injects it into the sandbox as the `IBM_CLOUD_REQ_CTX` environment variable. The {{site.data.keyword.paver}} CLI and built-in scripts automatically include this token when calling {{site.data.keyword.cloud_notm}} APIs. However, when you write a prompt that asks {{site.data.keyword.paver}} to call an {{site.data.keyword.cloud_notm}} API directly with `curl` or a custom script, {{site.data.keyword.paver}} does not include the context token in those requests. Without the token, context-based restrictions rules can't verify your client context, and the API call fails.
 {: tsCauses}
 
 When you write a prompt that involves direct API calls, instruct {{site.data.keyword.paver}} to set the `IBM-Cloud-Req-Ctx` request header to the value of the `IBM_CLOUD_REQ_CTX` environment variable. For example:

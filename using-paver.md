@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-25"
+lastupdated: "2026-10-26"
 
 keywords: using paver, paver cli, paver chat, paver ask
 
@@ -71,7 +71,7 @@ Work together to make a plan before you act
 :   You can ask {{site.data.keyword.paver}} to explain a service, a resource, or a proposed change before letting it make one. In Safe mode, {{site.data.keyword.paver}} can't modify your resources, but it can still read your resources and write files in its sandbox, such as plans, scripts, or Terraform. This makes exploring low-stakes.
 
 Be goal-oriented
-:   Instead of asking `How do I check my cluster status?`, tell {{site.data.keyword.paver}} your goal, which might be something like `Check if my Kubernetes cluster iks-useast-ha-cluster is healthy and let me know if any pods are crashing`.
+:   Instead of asking `How do I check my cluster status?`, tell {{site.data.keyword.paver}} your goal, for example `Check if my Kubernetes cluster iks-useast-ha-cluster is healthy and let me know if any pods are crashing`.
 
 Use contextual references
 :   {{site.data.keyword.paver}} has access to a persistent file system and memory. If you have a configuration file or a log, upload it and use an `@` reference to the file in your chat message. Similarly, you can quickly tell {{site.data.keyword.paver}} to inspect or work with specific resources with `@` references.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026, 2026
-lastupdated: "2026-10-25"
+lastupdated: "2026-10-26"
 
 keywords: paver help, paver support, paver feedback, troubleshoot paver, paver issue
 
@@ -61,7 +61,7 @@ Before you open a case, check the following:
 
 If you can't resolve an issue by troubleshooting with {{site.data.keyword.paver}}, ask {{site.data.keyword.paver}} to open a support case. You can do this in an interactive chat in the CLI or in the console.
 
-To open a case from the conversation, tell {{site.data.keyword.paver}} in natural language that you need to open a support case about a specific issue. For example, you can say `Open a support case about my failed deployment` or `I need to submit a support case for a provisioning error.` {{site.data.keyword.paver}} might ask you additional questions to clarify the issue you're experiencing, then it opens the case for you and populates the case subject, description, and other details based on your conversation about the issue, so you don't need to describe the issue from scratch.
+To open a case from the conversation, tell {{site.data.keyword.paver}} in natural language that you need to open a support case about a specific issue. For example, you can say `Open a support case about my failed deployment` or `I need to submit a support case for a provisioning error.` {{site.data.keyword.paver}} asks you additional questions to clarify the issue you're experiencing, then it opens the case for you and populates the case subject, description, and other details based on your conversation about the issue, so you don't need to describe the issue from scratch.
 
 The type of case that you can open depends on your [support plan](/docs/support?topic=support-support-plans). For example, if you have a Basic support plan, you can't open technical cases. To open a case manually, see [Creating support cases](/docs/support?topic=support-open-case).
 
