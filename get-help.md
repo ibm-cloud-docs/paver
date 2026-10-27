@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026, 2026
-lastupdated: "2026-10-26"
+lastupdated: "2026-10-27"
 
 keywords: paver help, paver support, paver feedback, troubleshoot paver, paver issue
 
@@ -57,7 +57,7 @@ Before you open a case, check the following:
 
 - Review the documentation for the specific services or resources that you're working with, if it is not an issue specific to {{site.data.keyword.paver}} itself.
 - Check the status of {{site.data.keyword.cloud_notm}} platform and resources on the [Status page](https://cloud.ibm.com/status){: external} to rule out a platform-level incident.
-- Review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see whether other users encountered the same problem. When you post a question, tag it with `ibm-cloud` and `paver` so that it's visible to the {{site.data.keyword.cloud_notm}} development teams.
+- Review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see if other users encountered the same problem. When you post a question, tag it with `ibm-cloud` and `paver` so that it's visible to the {{site.data.keyword.cloud_notm}} development teams.
 
 If you can't resolve an issue by troubleshooting with {{site.data.keyword.paver}}, ask {{site.data.keyword.paver}} to open a support case. You can do this in an interactive chat in the CLI or in the console.
 
