@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-26"
+lastupdated: "2026-10-27"
 
 keywords: paver responsibilities, customer responsibilities with paver
 
@@ -42,7 +42,7 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 |  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |--|--|--|
 | Instance provisioning and data residency | Make {{site.data.keyword.paver}} available in supported {{site.data.keyword.cloud_notm}} regions and store user data in the region where the instance is created. | Provision {{site.data.keyword.paver}} instances in the region where you require data to be stored to meet your [data residency](/docs/paver?topic=paver-paver-managing-data#paver-data-residency) requirements. |
-| Data retention lifecycle | Maintain the retention lifecycle for {{site.data.keyword.paver}}-managed data. According to the {{site.data.keyword.paver}} for {{site.data.keyword.cloud_notm}} [data retention policy](/docs/paver?topic=paver-paver-security-guide#paver-security-data-retention), inactive user data is automatically deleted after approximately 90 days. | Export any data that you want to preserve outside of {{site.data.keyword.paver}} before the retention period expires. |
+| Data retention lifecycle | Maintain the retention lifecycle for {{site.data.keyword.paver}}-managed data. Inactive user data is automatically deleted after approximately 90 days according to the {{site.data.keyword.paver}} for {{site.data.keyword.cloud_notm}} [data retention policy](/docs/paver?topic=paver-paver-security-guide#paver-security-data-retention). | Export any data that you want to preserve outside of {{site.data.keyword.paver}} before the retention period expires. |
 {: row-headers}
 {: caption="Responsibilities for change management" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
