@@ -1,7 +1,7 @@
 {
   "version": 2,
   "title": "IBM Paver for IBM Cloud",
-  "introduction": "Learn about IBM Paver for IBM Cloud, an agentic AI operator for infrastructure operations, its capabilities, and how it works within your environment.",
+  "introduction": "Learn about IBM Paver for IBM Cloud, an agentic AI operator for cloud operations and infrastructure management, its capabilities, and how it works within your environment.",
   "section_topics": {
     "links": [
       {
@@ -29,7 +29,7 @@
   "section_highlights": [
     {
       "title": "IBM Paver",
-      "description": "Meet Paver. IBM's AI-native infrastructure operator pupose-built for the way teams work.",
+      "description": "Meet Paver. IBM's AI-native infrastructure operator purpose-built for the way teams work.",
       "href": "https://paver.ibm.com/",
       "type": "article",
       "recommended": true

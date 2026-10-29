@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-25"
+lastupdated: "2026-10-29"
 
 keywords: paver plans, paver pricing, paver free plan, paver professional plan, paver credits, paver tiers
 
@@ -22,7 +22,7 @@ Free
 :   The Free plan is designed for individual exploration and learning. You receive a set number of credits per month at no cost. When credits are exhausted, {{site.data.keyword.paver}} enters read-only mode, meaning it can continue to provide information and guidance but can't act on your behalf until credits renew.
 
 Professional
-:   The Professional plan is designed for individual practitioners and teams who run regular operations. When credits are exhausted, additional usage is billed on a pay-as-you-go basis per credit.
+:   The Professional plan is designed for individual practitioners and teams who run regular cloud operations. When credits are exhausted, additional usage is billed on a pay-as-you-go basis per credit.
 
 Credits reset at the start of each month.
 {: note}

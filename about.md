@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-25"
+lastupdated: "2026-10-29"
 
 keywords: paver overview, what is paver, infrastructure operations, paver capabilities
 
@@ -15,12 +15,10 @@ subcollection: paver
 # About {{site.data.keyword.paver_full_notm}} for {{site.data.keyword.cloud_notm}}
 {: #paver-about}
 
-Learn about {{site.data.keyword.paver_full}}, its capabilities, and how it works with your account and resources. {{site.data.keyword.paver}} is a built-in agentic AI operator that helps you deploy, operate, and troubleshoot your cloud account and resources through natural language.
+{{site.data.keyword.paver}} is a built-in agentic AI operator that helps you manage cloud operations such as deploying, operating, and troubleshooting your cloud account and resources through natural language. {{site.data.keyword.paver}} is available directly in the {{site.data.keyword.cloud}} console and through the {{site.data.keyword.paver_full_notm}} CLI, so you can work with your accounts, services, and infrastructure without switching between tools.
 {: shortdesc}
 
-{{site.data.keyword.paver}} is available directly in the {{site.data.keyword.cloud}} console and through the {{site.data.keyword.paver_full_notm}} CLI, so you can work with your accounts, services, and infrastructure without switching between tools. Rather than generating code for you to run elsewhere, {{site.data.keyword.paver}} acts on your behalf within {{site.data.keyword.cloud_notm}}. It runs commands and scripts in a secure sandbox workspace, reads your account context, reasons about what needs to happen, explains its plan, and actions approved changes against your live environment.
-
-{{site.data.keyword.paver}} is built for environments where reliability, governance, and accountability matter. It operates within your existing permissions and security policies and can't exceed your authorized access.
+Rather than generating code for you to run elsewhere, {{site.data.keyword.paver}} acts on your behalf within {{site.data.keyword.cloud_notm}}. It runs commands and scripts in a secure sandbox workspace, reads your account context, reasons about what needs to happen, explains its plan, and actions approved changes against your live environment. {{site.data.keyword.paver}} is built for environments where reliability, governance, and accountability matter. It operates within your existing permissions and security policies and can't exceed your authorized access.
 
 Your prompts, context, and operational data are never used to train foundation models.
 {: note}
@@ -28,7 +26,7 @@ Your prompts, context, and operational data are never used to train foundation m
 ## What you can do within {{site.data.keyword.paver}} in {{site.data.keyword.cloud_notm}}
 {: #paver-capabilities}
 
-{{site.data.keyword.paver}} can help you accomplish the following operational goals in your {{site.data.keyword.cloud_notm}} account:
+{{site.data.keyword.paver}} can help you accomplish the following cloud operations goals in your {{site.data.keyword.cloud_notm}} account:
 
 - Deploy applications across {{site.data.keyword.cloud_notm}} infrastructure
 - Resolve incidents by correlating logs, metrics, and recent changes
