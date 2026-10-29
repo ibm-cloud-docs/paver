@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-29"
 
 keywords: paver getting started, paver console, chat with paver
 
@@ -20,7 +20,7 @@ completion-time: 10m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="10m"}
 
-Learn how to get started with {{site.data.keyword.paver_full}} in the {{site.data.keyword.cloud}}. {{site.data.keyword.paver}} is available in the {{site.data.keyword.cloud_notm}} console, where you can quickly start a chat with {{site.data.keyword.paver}} to manage your account and resources and operate your infrastructure.
+Learn how to get started with {{site.data.keyword.paver_full}} in the {{site.data.keyword.cloud}}. {{site.data.keyword.paver}} is available in the {{site.data.keyword.cloud_notm}} console, where you can quickly start a chat with {{site.data.keyword.paver}} to manage your cloud operations, account resources, and infrastructure.
 {: shortdesc}
 
 To interact with {{site.data.keyword.paver}} from your terminal instead, see [Installing {{site.data.keyword.paver}} CLI](/docs/paver?topic=paver-paver-cli-install).
